@@ -30,7 +30,7 @@ const Header = () => {
                         <div className="bg-rosa w-full text-center absolute top-16 left-0 right-0">
                             <ul>
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 mt-4 text-preto">
+                                    <Link href="../../Ciencia/Conheça4startupsbrasileirasquevaoaoSXSW2024" className="block px-4 py-2 mt-4 text-preto">
                                         Notícias
                                     </Link>
                                 </li>
