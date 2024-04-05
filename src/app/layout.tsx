@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import noticiasData from '../database/tecnologia.json';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,16 @@ export default function RootLayout({
         <Header />
         {children}
         <footer>
+        <div>
+          {/* Mapeando as notícias de tecnologia */}
+          {noticiasData.noticiastecnologia.map(noticia => (
+            <div key={noticia.Id}>
+              <h2>{noticia.titulo}</h2>
+              <a href='Tecnologia/Conheca4startupsbrasileirasquevaoaoSXSW2024/page.tsx'>Link</a>
+              <img src={noticia.LinkImagen} alt="Imagem da Notícia" />
+            </div>
+          ))}
+        </div>
           <Footer />
           </footer>
       </body>

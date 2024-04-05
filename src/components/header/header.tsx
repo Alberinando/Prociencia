@@ -60,7 +60,7 @@ const Header = () => {
                 </div>
 
                 {/* Navegação para dispositivos maiores */}
-                <div className="hidden sm:flex flex-row items-center justify-center z-10"> {/* Adicionando 'z-10' para definir o z-index */}
+                <div className="hidden sm:flex flex-row items-center justify-center z-10 space-x-10"> {/* Adicionando 'z-10' para definir o z-index */}
                     <div className="ml-4 mr-4">Logo</div>
                     <ul className="flex space-x-10 justify-items-center items-center">
                         <li>
