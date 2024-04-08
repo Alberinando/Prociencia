@@ -29,7 +29,7 @@ export default function RootLayout({
           {noticiasData.noticiastecnologia.map(noticia => (
             <div key={noticia.Id}>
               <h2>{noticia.titulo}</h2>
-              <a href='Tecnologia/Conheca4startupsbrasileirasquevaoaoSXSW2024/page.tsx'>Link</a>
+          
               <img src={noticia.LinkImagen} alt="Imagem da Notícia" />
             </div>
           ))}
