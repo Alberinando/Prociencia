@@ -3,25 +3,25 @@
         {
             "Id": "1",
             "titulo": "Astrologia: quem nasce em ano bissexto tem qual tipo de personalidade?",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_comportamento/calendario.png",
             "LinkNoticia":""
         },
         {
             "Id": "2",
             "titulo": "Sabor de Casa: veja como fazer filé à parmegiana com 'molho especial' da Soraia Bueno",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_comportamento/File_a_parmegiana.png",
             "LinkNoticia":""
         },
         {
             "Id": "3",
             "titulo": "Vai viajar? Veja algumas dicas para levar o seu pet com segurança",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_comportamento/pats.png",
             "LinkNoticia":""
         },
         {
             "Id": "4",
             "titulo": "As dificuldades do jogo amoroso para as mulheres mais velhas",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_comportamento/Jael_Klein.png",
             "LinkNoticia":""
         }
     ]

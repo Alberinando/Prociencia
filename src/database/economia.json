@@ -3,25 +3,25 @@
         {
             "Id": "1",
             "titulo": "Mulheres são os motores do crescimento econômico, diz Melinda Gates",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_economia/Melinda.png",
             "LinkNoticia":""
         },
         {
             "Id": "2",
             "titulo": "Mercado volta a elevar previsão de crescimento da economia em 2024, aponta Focus",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_economia/cedulas.png",
             "LinkNoticia":""
         },
         {
             "Id": "3",
             "titulo": "Sony corta 900 empregos da PlayStation e fecha estúdio em Londres",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_economia/playstation.png",
             "LinkNoticia":""
         },
         {
             "Id": "4",
             "titulo": "Mercado de R$ 150 tri: por que empresas precisam olhar para a economia feminina",
-            "LinkImagen": "",
+            "LinkImagen": "/assets/imagens_economia/Beyonce.png",
             "LinkNoticia":""
         }
     ]
