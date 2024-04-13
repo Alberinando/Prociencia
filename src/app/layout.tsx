@@ -24,8 +24,8 @@ export default function RootLayout({
         <Header />
         {children}
         <footer>
-        <div>
-          {/* Mapeando as notícias de tecnologia */}
+       {/* <div>
+          
           {noticiasData.noticiastecnologia.map(noticia => (
             <div key={noticia.Id}>
               <h2>{noticia.titulo}</h2>
@@ -33,7 +33,7 @@ export default function RootLayout({
               <img src={noticia.LinkImagen} alt="Imagem da Notícia" />
             </div>
           ))}
-        </div>
+        </div>*/}
           <Footer />
           </footer>
       </body>
