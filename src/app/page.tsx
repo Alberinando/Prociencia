@@ -10,6 +10,8 @@ export default function Home() {
       <a href="./Tecnologia/Conhecaocao-robodaXiaomiquedancaeviracambalhota">Conheça o cão-robô da Xiaomi que dança e vira cambalhota</a>
       <br />
       <a href="./Tecnologia/MulheresnaTIvocetambempodeserumadelas">Mulheres na TI: você também pode ser uma delas!</a>
+      <br />
+      <a href="./Saude/SurtoepidemiapandemiaeendemiaentendaadiferencaequaisseaplicamnocenariodadenguenoBrasil">Surto, epidemia, pandemia e endemia: entenda a diferença e quais se aplicam no cenário da dengue no Brasil</a>
     </>
   );
 }

@@ -1,0 +1,53 @@
+"use client"
+
+export default function noticia() {
+    return (
+        <>
+           <h1>Comer carambola faz mal para os rins? Entenda</h1>
+           <h2>Comer carambola faz mal para os rins? Saiba por que ela pode ser prejudicial a pacientes renais e conheça os 
+            benefícios da fruta que melhora o sistema imune</h2>
+            <p>
+                Certamente você já ouviu dizer que a carambola faz mal aos rins. Em parte, a afirmativa é verdadeira, já que 
+                quem tem problemas renais deve evitar o consumo da fruta.
+            </p>
+            <p>
+                A médica Márcia Lisboa, especialista em nutrologia clínica e hemoterapia, explica que a carambola possui duas 
+                substâncias que podem ser perigosas para o paciente renal: a caramboxina, uma neurotoxina que, se não for 
+                filtrada pelos rins, vai para o sangue e atinge o sistema nervoso central, provocando agitação em algumas 
+                pessoas, e o oxalato de cálcio, que provoca a litíase renal - popularmente chamada de pedra nos rins.
+            </p>
+            <p>Em conversa com o Receitas, ela comenta:</p>
+            <p>
+                "É importante notar que a carambola contém uma substância chamada ácido oxálico, que pode ser prejudicial para 
+                pessoas com problemas renais, já que pode levar à formação de cristais nos rins. Além disso, pessoas que tomam 
+                certos medicamentos, como inibidores da enzima CYP3A4, também devem evitar o consumo de carambola, pois ela 
+                pode interagir com esses medicamentos e causar efeitos adversos."
+            </p>
+            <p>
+                Lembre-se sempre de consultar um médico e um nutricionista para adequar sua alimentação!
+            </p>
+            <img src="/assets/imagens_saude/carambola.png" alt="imagem de carambola" />
+            <h2>Os benefícios da carambola para a saúde</h2>
+            <p>
+                Mas isso não faz da fruta uma vilã para a saúde. A carambola é um alimento extremamente benéfico e rico em 
+                vitamina C, potássio e fibras. Em conjunto, esses elementos fazem com que o nossos sistemas cardíaco, imune 
+                e digestório funcionem ainda melhor.
+            </p>
+            <h2>Quantas carambolas podemos comer por dia?</h2>
+            <p>
+                Em média, uma carambola tem 31 calorias por porção: sem exagero, ela é uma ótima opção para incluir na 
+                alimentação do dia a dia.
+            </p>
+            <p>
+                "A quantidade de carambolas que se pode consumir por dia pode variar dependendo de diversos fatores, incluindo a 
+                saúde geral da pessoa e qualquer condição médica específica que ela possa ter. No entanto, para a maioria das 
+                pessoas saudáveis, consumir uma ou duas carambolas por dia geralmente não representa nenhum problema", aponta a 
+                médica Márcia Lisboa.
+            </p>
+            <p>
+                 Além de comer a fruta in natura, você pode fazer em casa a compota de carambola, um carpaccio de carambola ou 
+                 uma salada de folhas com carambola. Ficam uma delícia!
+            </p>
+        </>
+    );
+}
