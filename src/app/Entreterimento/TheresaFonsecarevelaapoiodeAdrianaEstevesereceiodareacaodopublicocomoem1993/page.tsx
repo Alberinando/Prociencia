@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-           
+            
         </>
     );
 }
