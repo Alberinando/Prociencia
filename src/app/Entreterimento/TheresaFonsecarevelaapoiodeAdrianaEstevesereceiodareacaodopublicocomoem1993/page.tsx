@@ -3,7 +3,45 @@
 export default function noticia() {
     return (
         <>
-            
+            <h1>Theresa Fonseca revela apoio de Adriana Esteves e receio da reação do do público como em 1993</h1>
+            <p>
+                Mariana na primeira versão da novela, Adriana Esteves viveu crise após críticas à personagem e chegou a rejeitar 
+                trabalhos depois da novela. 'Tô com medo até agora', disse Theresa.
+            </p>
+            <img src="/assets/imagens_entretedimento/noivas.png" alt="imagem de noivas se casando" />
+            <p>
+                Após fazer sucesso como a Labibe de Mar do Sertão, Theresa Fonseca estreou na faixa das 9 como a Mariana de Renascer. 
+                Vivendo um triângulo amoroso entre pai e filho, a personagem está longe de ser uma queridinha do público. Mas Theresa 
+                defende Mariana e diz que entende a desconfiança dos telespectadores em relação à jovem. No Encontro com Patrícia 
+                Poeta desta terça-feira (27), Theresa contou recebeu o apoio de Adriana Esteves, que interpretou Mariana na primeira 
+                versão da novela.
+            </p>
+            <p>
+                "Adriana é uma pessoa admirável em todos os aspectos e ela se demonstrou uma parceria"
+            </p>
+            <p>
+                Em 1993, quando a primeira versão de Renascer foi ao ar, Adriana Esteves foi muito criticada justamente pela rejeição 
+                do público à personagem. Ao podcast Papo de Novela, a atriz contou sobre a crise profissional que teve durante a 
+                trama e que a afastou de outros projetos.
+            </p>
+            <p>
+                "Minha personagem era muito sofrida, e como eu sou uma atriz que se dedica muito, fiquei muito envolvida com a 
+                história. Ela era uma menina muito sozinha, muito sofrida. E isso foi de um impacto muito grande pra mim. Acho 
+                que eu misturei muito o personagem... eu me dediquei tanto, pra buscar, pra entender... e eu fiquei durante aquele 
+                tempo da novela sofrida com sofrimentos que eram da Mariana, não eram pra ser meus. Tudo isso é a maturidade. Algumas 
+                coisas nunca mais foram feitas e repetidas por mim enquanto atriz. Dá pra ter a mesma dedicação, o mesmo 
+                aprofundamento, sem você misturar muito o que é ficção e o que é realidade", disse Adriana.
+            </p>
+            <p>
+                Nesse sentido, Theresa agradeceu o apoio de Adriana no que diz respeito à pressão que a personagem carrega.
+            </p>
+            <p>
+            "Ela foi muito fofa. Ela aumentou minha moral"
+            </p>
+            <p>Theresa Fonseca também contou que assim como Adriana Esteves tem receio do que o público vai achar da personagem.</p>
+            <p>
+            "Tô com medo até agora. Não passou ainda, não. Mas eu gosto de desafio e eu acredito muito em Deus", disse.
+            </p>
         </>
     );
 }
