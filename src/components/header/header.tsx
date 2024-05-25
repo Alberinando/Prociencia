@@ -11,11 +11,11 @@ const Header = () => {
     };
 
     return (
-        <div className="bg-rosa relative z-10">
-            <div className="text-black p-6 flex flex-row text-sm md:text-base lg:text-lg xl:text-xl">
+        <div className="bg-rosa relative z-10 w-full">
+            <div className="text-black p-6 w-full flex flex-row text-sm md:text-base lg:text-lg xl:text-xl">
                 {/* Menu hamburguer para dispositivos móveis */}
-                <div className="mt-1 sm:hidden w-full">
-                    <div className="flex flex-row">
+                <div className="mt-1 sm:hidden w-full ">
+                    <div className="flex flex-row ">
                         <button onClick={toggleOptions} aria-label="Toggle Menu">
                             <Image
                                 src="/assets/Header/menu-hamburguer.png"
@@ -60,8 +60,8 @@ const Header = () => {
                 </div>
 
                 {/* Navegação para dispositivos maiores */}
-                <div className="hidden sm:flex flex-row items-center justify-center z-10 space-x-10"> {/* Adicionando 'z-10' para definir o z-index */}
-                    <div className="ml-4 mr-4">Logo</div>
+                <div className="hidden sm:flex flex-row items-center justify-center z-10 space-x-10 w-full "> {/* Adicionando 'z-10' para definir o z-index */}
+                    <div className="ml-4 mr-4 ">Logo</div>
                     <ul className="flex space-x-10 justify-items-center items-center">
                         <li>
                             <Link href="/" className="text-preto">
@@ -90,6 +90,7 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </div>
     );

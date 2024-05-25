@@ -6,10 +6,12 @@ export default function noticia() {
         <>
             <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 " >
                     <div className="grow col-start-2 col-span-4 ">
-                     <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px]  ">Mulheres na TI: você também pode ser uma delas!</h1>
+                     <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">Mulheres na TI: você também pode ser uma delas!</h1>
                     </div>
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                    <p className="sm:text-[24px] text-[18px] ">Não dá para negar que a presença masculina ainda é majoritária no setor de tecnologia. E eu sou a prova disso!</p>
+                        <p className="sm:text-[24px] text-[18px] ">
+                            Não dá para negar que a presença masculina ainda é majoritária no setor de tecnologia. E eu sou a prova disso!
+                        </p>
                     </div>
                     <div className="grow col-start-2 col-span-4">
                         <img src="/assets/imagens_tecnologia/imagem-capa.webp" alt="imagem de mulher"/>
