@@ -44,7 +44,7 @@ export default function noticia() {
                     </div>
     </div>*/}
 
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 " >
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                      <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">Por que menos mulheres estão usando inteligência artificial do que homens?</h1>
                     </div>
