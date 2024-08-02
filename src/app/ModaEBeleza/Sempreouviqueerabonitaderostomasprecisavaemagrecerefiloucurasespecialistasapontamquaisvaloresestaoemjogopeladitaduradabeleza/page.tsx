@@ -4,15 +4,15 @@ export default function noticia() {
     return (
         <>
 
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
-                    <div className="grow col-start-2 col-span-4 ">
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
+                    <div className="grow col-start-2 col-span-4 mb-[40px]">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             ‘Sempre ouvi que era bonita de rosto, mas precisava emagrecer e fiz loucuras’: especialistas apontam quais valores 
                             estão em jogo pela ditadura da beleza
                         </h1>
                     </div>
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                    <div className="grow sm:col-start-2 col-span-4 col-start-2 mb-[20px]">
+                        <p className=" text-[18px] ">
                             No Dia Internacional das Mulheres, o g1 ouviu três mulheres que por conta do sobrepeso correram contra o tempo para 
                             se encaixarem em padrões sociais estéticos e com o tempo passaram a se aceitar como são. Veja o que psicólogos de 
                             Divinópolis dizem sobre o tema.
@@ -44,7 +44,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-4 text-[18px] mt-[20px]">
                         <p>
                             O mundo globalizado na palma da mão e ao alcance de todos por um clique, permite a quebra de limites territoriais no 
                             espaço cibernético e se apresenta como uma arma poderosa dentro das relações sociais, pessoais e de consumo. No 
@@ -60,7 +60,7 @@ export default function noticia() {
                             A reportagem também ouviu dois psicólogos clínicos que falaram sobre os valores que estão em jogo dentro da chamada 
                             ditadura da beleza. Confira.
                         </p>
-                        <h2>Busca por padrões de beleza</h2>
+                        <h2 className="text-[20px] font-black">Busca por padrões de beleza</h2>
                         <p>
                             A busca incansável pelo padrão de beleza imposto socialmente faz com que muitas mulheres se arrisquem com recursos 
                             perigosos para alcançarem corpos magros, torneados, peles jovens e sem marcas do tempo.

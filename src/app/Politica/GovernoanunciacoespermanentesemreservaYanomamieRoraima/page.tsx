@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Governo anuncia ações permanentes em reserva Yanomami em Roraima
@@ -11,12 +11,12 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                         <p className="sm:text-[24px] text-[18px] ">
+                         <p className="text-[18px] ">
                             Medidas englobam mudanças na atuação dos militares na região e coordenação política interministerial
                          </p>
                     </div>
 
-                    <div className="grow col-start-2 col-span-4">
+                    <div className="grow col-start-2 col-span-4 mt-[20px] mb-[20px]">
                         <img src="/assets/imagens_politica/mulher_com_criança.png" alt="imagem de mulher com criança" />
                     </div>
 

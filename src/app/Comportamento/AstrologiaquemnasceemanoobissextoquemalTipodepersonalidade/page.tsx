@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid font-Arial space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Astrologia: quem nasce em ano bissexto tem qual tipo de personalidade?
@@ -11,7 +11,7 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Nascidos nesta data "rara" podem optar por comemorar o aniversário dia 28 de fevereiro ou 1º de março
                         </p>
                     </div>
@@ -41,7 +41,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             O ano de 2024 é bissexto, o que significa que terá um dia a mais do que os anos comuns. Esse acréscimo ocorre para 
                             ajustar o calendário civil ao movimento real da Terra em torno do Sol. Nestes anos específicos, é adicionado um dia 
@@ -56,7 +56,7 @@ export default function noticia() {
                             Enquanto alguns “místicos” afirmam que o fato de nascer em um ano bissexto pode influenciar a personalidade de uma 
                             pessoa, outros argumentam que a data exata de nascimento é o fator determinante.
                         </p>
-                        <h2>A singularidade do dia 29 de fevereiro</h2>
+                        <h2 className="text-[20px] font-black">A singularidade do dia 29 de fevereiro</h2>
                         <p>
                             Pela ótica astrológica, a hora e o local do nascimento são elementos essenciais para a elaboração do mapa astral de 
                             uma pessoa. Portanto, mesmo que o ano bissexto em si não tenha, diretamente, um efeito direto sobre a personalidade, 
@@ -79,12 +79,12 @@ export default function noticia() {
                             redor. No entanto, essa sensibilidade intensa pode tornar os piscianos mais suscetíveis às influências negativas 
                             do ambiente ou das com quem convivem.
                         </p>
-                        <h2>Quem nasce em 29 de fevereiro só faz aniversário a cada quatro anos?</h2>
+                        <h2 className="text-[20px] font-black">Quem nasce em 29 de fevereiro só faz aniversário a cada quatro anos?</h2>
                         <p>
                             Não. As pessoas que nascem no dia 29 de fevereiro, nos anos não bissextos, podem optar por celebrar no último dia 
                             de fevereiro, 28, ou em 1º de março. A escolha é exclusiva de cada indivíduo.
                         </p>
-                        <h2>Como aproveitar a energia do mês de fevereiro?</h2>
+                        <h2 className="text-[20px] font-black">Como aproveitar a energia do mês de fevereiro?</h2>
                         <p>
                             O mês de fevereiro de 2024 é marcado por um agrupamento significativo de planetas no signo de Aquário, trazendo 
                             consigo conjunções notáveis com Plutão. Essa configuração astrológica promete ser um ponto de virada crucial, 

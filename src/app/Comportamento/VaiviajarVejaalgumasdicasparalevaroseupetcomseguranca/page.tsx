@@ -3,14 +3,14 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid font-Arial text-[20px] sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Vai viajar? Veja algumas dicas para levar o seu pet com segurança
                         </h1>
                     </div>
 
-                    <div className="grow col-start-2 col-span-4">
+                    <div className="grow col-start-2 col-span-4 mt-[40px]">
                         <img src="/assets/imagens_comportamento/pats.png" alt="imagem de um pat"/>
                     </div>
 
@@ -35,7 +35,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-4 text-[18px] space-y-8">
                         <p>
                             Muitas famílias aproveitam para viajar durante o período de férias e, geralmente, quem tem animal de estimação se 
                             vê diante de duas opções: pegar a estrada com eles ou deixá-los sob os cuidados de uma pessoa de confiança.
@@ -70,8 +70,8 @@ export default function noticia() {
                             tornando a experiência mais agradável e menos estressante para os pets”, observa Priscila Rizelo, veterinária e coordenadora 
                             de comunicação científica da Royal Canin Brasil.
                         </p>
-                        <h2>Veja outras dicas para viajar com o pet em segurança</h2>
-                        <h3>Paradas são essenciais</h3>
+                        <h2 className="text-[25px] font-black">Veja outras dicas para viajar com o pet em segurança</h2>
+                        <h3 className="text-[20px] font-black">Paradas são essenciais</h3>
                         <p>
                             Assim como para nós, ficar horas na mesma posição em um carro pode ser desconfortável e exaustivo para os animais. 
                             Por isso, a recomendação é fazer paradas a cada duas horas.
@@ -83,7 +83,7 @@ export default function noticia() {
                         <p>
                             Raças braquicefálicas, aquelas de focinho achatado, como pugs e buldogues, necessitam de paradas ainda mais frequentes.
                         </p>
-                        <h3>Alimentação</h3>
+                        <h3 className="text-[20px] font-black">Alimentação</h3>
                         <p>
                             Outro cuidado essencial é com a alimentação do pet durante a viagem. É recomendável levar a ração ou a comida 
                             habitual do animal, para evitar mudanças bruscas na dieta que possam causar problemas digestivos.
@@ -100,7 +100,7 @@ export default function noticia() {
                             Esteja atento ao comportamento do pet durante a viagem. Se notar sinais de desconforto ou estresse, ajuste o plano 
                             da viagem conforme necessário, considerando mais paradas.
                         </p>
-                        <h3>Atenção na hospedagem</h3>
+                        <h3 className="text-[20px] font-black">Atenção na hospedagem</h3>
                         <p>
                             Além do transporte, outro aspecto importante a considerar é o local em que ficará hospedado com o animal de 
                             estimação. É necessário observar se o espaço aceita receber pets e é preparado para isso.

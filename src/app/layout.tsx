@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
-        <footer>
+       <footer>
        {/* <div>
           
           {noticiasData.noticiastecnologia.map(noticia => (
@@ -34,8 +34,8 @@ export default function RootLayout({
             </div>
           ))}
         </div>*/}
-          <Footer />
-          </footer>
+        <Footer />
+        </footer>
       </body>
     </html>
   );

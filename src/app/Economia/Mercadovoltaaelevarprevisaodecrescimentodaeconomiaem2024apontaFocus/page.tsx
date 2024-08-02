@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-        <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+        <div className="grow grid font-Arial space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28  " >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Mercado volta a elevar previsão de crescimento da economia em 2024, aponta Focus
@@ -11,7 +11,7 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Economistas ouvidos pelo Banco Central também revisaram para baixo a expectativa de inflação neste ano
                         </p>
                     </div>
@@ -41,7 +41,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             Os economistas ouvidos pelo Banco Central (BC) voltaram a elevar a projeção de crescimento para a economia brasileira 
                             em 2024. Agora, o mercado espera uma alta de 1,75%, ante 1,68% no relatório Focus da semana passada. Essa é a 

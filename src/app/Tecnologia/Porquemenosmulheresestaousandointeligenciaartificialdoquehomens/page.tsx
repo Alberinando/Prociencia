@@ -3,49 +3,9 @@
 export default function noticia() {
     return (
         <>
-        {/*<div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 " >
-                    <div className="grow col-start-2 col-span-4 ">
-                     <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
-                        
-                     </h1>
-                    </div>
-
-                    <div className="grow col-start-2 col-span-4">
-                        
-                    </div>
-
-                    <div className="grow overflow-hidden   sm:col-start-6 col-span-3 col-start-2 col-span-4 space-y-4   m-0 sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px]">
-                        <div className="bg-darkgray flex justify-center ">
-                            <h1 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[27px] xl:text-[32px] text-center self-center  bg-darkgray">NEWSLETTER HORÓSCOPO</h1>
-                        </div>
-                        <p className=" text-[18px] ">Toda segunda, receba no seu e-mail as previsões semanais para o seu signo.</p>
-                        <p className="text-center ">Cadastre o seu melhor e-mail:</p>
-                       <div className="">
-                        <input
-                                type="text"
-                                className=" w-full p-2 border border-gray rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                placeholder="Digite aqui..."
-                            />
-                       </div>
-                        <div className="flex justify-center ">
-                            <button className="bg-gray mt-4 w-48 h-10 col-start-2 col-span-1 font-pixels">
-                                Enviar
-                            </button>
-                        </div>
-
-                    </div>
-                    
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
-                    
-                    </div>
-
-                    <div className="grow ml-[100px] sm:mr-[50px] sm:ml-[50px] sm:col-start-6 col-span-3 col-start-2 col-span-4   ">
-                        <div className=" hidden sm:block h-[1666px]  bg-darkgray "></div>
-                    </div>
-    </div>*/}
 
                 <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
-                    <div className="grow col-start-2 col-span-4 ">
+                    <div className="grow col-start-2 col-span-4 mb-[50px]">
                      <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">Por que menos mulheres estão usando inteligência artificial do que homens?</h1>
                     </div>
 
@@ -53,7 +13,7 @@ export default function noticia() {
                         <img src="/assets/imagens_tecnologia/imagem_de_mulher.png" alt="imagem de mulher" />
                     </div>
 
-                    <div className="grow overflow-hidden   sm:col-start-6 col-span-3 col-start-2 col-span-4 space-y-4   m-0 sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px]">
+                    <div className="grow overflow-hidden   sm:col-start-6 col-span-3 col-start-2 col-span-4 space-y-4   m-0 sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px] mt-[30px]">
                         <div className="bg-darkgray flex justify-center ">
                             <h1 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[27px] xl:text-[32px] text-center self-center  bg-darkgray">NEWSLETTER HORÓSCOPO</h1>
                         </div>

@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid text-[20px] font-Arial space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Mulheres na ciência: conheça 8 cientistas que fizeram história
@@ -11,7 +11,7 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             No Dia Mundial das Mulheres e Meninas na Ciência, confira algumas das mulheres cientistas cujas contribuições deixaram 
                             uma marca na história da ciência.
                         </p>
@@ -43,12 +43,12 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             A Organização das Nações Unidas (ONU) enfatiza que mulheres e meninas desempenham um papel vital nas comunidades 
                             científicas e tecnológicas e, por isso, sua participação deve ser fortalecida.
                         </p>
-                        <h2>Quando é o Dia da Mulher e das Meninas na Ciência?</h2>
+                        <h2 className="text-[20px] font-black">Quando é o Dia da Mulher e das Meninas na Ciência?</h2>
                         <p>
                             Para reconhecer o papel-chave que desempenham nesta área, a Assembleia Geral das Nações Unidas declarou o dia 11 de 
                             fevereiro como o Dia Internacional da Mulher e das Meninas na Ciência.
@@ -63,7 +63,7 @@ export default function noticia() {
                             reconhece o Alto Comissariado das Nações Unidas para os Refugiados (Acnur). Entre as mais destacadas, a agência 
                             menciona oito.
                         </p>
-                        <h2>1. Caroline Herschel</h2>
+                        <h2 className="text-[20px] font-black">1. Caroline Herschel</h2>
                         <p>
                             Nascida na Alemanha, Caroline Herschel (1750-1848) foi assistente de seu irmão William, que era astrônomo e ficou 
                             famoso por sua descoberta do planeta Urano. Enquanto trabalhava com ele, ela descobriu novas nebulosas (nuvens de 
@@ -77,7 +77,7 @@ export default function noticia() {
                         <p>
                             Em 1783, ela descobriu três novas nebulosas e, entre 1786 e 1797, descobriu oito cometas, segundo a Nasa.
                         </p>
-                        <h2>2. Ada Lovelace</h2>
+                        <h2 className="text-[20px] font-black">2. Ada Lovelace</h2>
                         <p>
                             Ada Lovelace, que viveu entre 1815 e 1852, é considerada a primeira programadora de computadores da história e a 
                             pessoa responsável pelo que iniciou o sistema informático que conhecemos hoje, diz a agência das Nações Unidas.
@@ -95,7 +95,7 @@ export default function noticia() {
                         <p>
                             Em sua homenagem, o Departamento de Defesa dos Estados Unidos nomeou uma linguagem de programação "Ada".
                         </p>
-                        <h2>3. Marie Curie</h2>
+                        <h2 className="text-[20px] font-black">3. Marie Curie</h2>
                         <p>
                             Marie Curie (1867-1934) foi uma física e química polonesa pioneira no estudo da radiação. Suas pesquisas a levaram a 
                             descobrir dois elementos radioativos: o rádio e o polônio.
@@ -112,7 +112,7 @@ export default function noticia() {
                             Por suas contribuições, ela recebeu dois prêmios Nobel e se tornou a primeira mulher a receber este reconhecimento e a 
                             primeira pessoa a ganhar dois prêmios Nobel em diferentes ciências (física, em 1903, e em química, em 1911).
                         </p>
-                        <h2>4. Lise Meitner</h2>
+                        <h2 className="text-[20px] font-black">4. Lise Meitner</h2>
                         <p>
                             Lise Meitner era uma física sueca nascida na Áustria que viveu entre 1878 e 1968. Junto com seu parceiro de pesquisa, 
                             Otto Hahn, ela trabalhou no estudo de elementos radioativos.
@@ -122,7 +122,7 @@ export default function noticia() {
                             produção de energia nas usinas termonucleares. Apesar de sua contribuição, foi Hahn quem ganhou um Prêmio Nobel 
                             por esta descoberta, enquanto Meitner não foi considerada pelo comitê de premiação.
                         </p>
-                        <h2>5. Rosalind Franklin</h2>
+                        <h2 className="text-[20px] font-black">5. Rosalind Franklin</h2>
                         <p>
                             Desde bem jovem, Rosalind Franklin (1920-1958) sabia que queria seguir uma carreira na ciência. Em 1945, começou 
                             sua carreira científica depois de conquistar o doutorado em química pela Universidade de Cambridge (Reino Unido).
@@ -142,7 +142,7 @@ export default function noticia() {
                             biologia molecular. Uma de suas principais contribuições à ciência foi a descoberta da enzima DNA polimerase, que 
                             é responsável pela replicação do DNA.
                         </p>
-                        <h2>7. Elizabeth Blackburn</h2>
+                        <h2 className="text-[20px] font-black">7. Elizabeth Blackburn</h2>
                         <p>
                             Esta cientista australiana, nascida em 1948, doutora em biologia molecular, descobriu a telomerase, uma enzima que 
                             prolonga os telômeros, que são as extremidades dos cromossomos e influenciam diretamente na longevidade das células. 
@@ -153,7 +153,7 @@ export default function noticia() {
                             Por sua descoberta, a australiana recebeu o Prêmio Nobel de Medicina de 2009, com os colegas Carol Greider e Jack 
                             Szostak, de acordo com o site do prêmio internacional.
                         </p>
-                        <h2>8. Flora de Pablo</h2>
+                        <h2 className="text-[20px] font-black">8. Flora de Pablo</h2>
                         <p>
                             O Acnur também destaca o trabalho de Flora de Pablo, nascida em 1952, na Espanha, médica e psicóloga especializada 
                             em biologia molecular.

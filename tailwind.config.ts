@@ -13,8 +13,12 @@ const config: Config = {
       },
     },
     colors: {
-      branco: '#FFFFFF',
+      'branco': '#FFFFFF',
+      'cinza-escuro':'#B2B2B2',
       'cinza': '#BBBBBB',
+      'custom-pink': '#F11E96',
+      'rosa-claro':'#FFA0EA',
+      'roxo-p08': '#8A2BE2',
       'preto':'#000000',
         'rosa':'#FFEEFA',
         'aliceblue': '#F0F8FF',

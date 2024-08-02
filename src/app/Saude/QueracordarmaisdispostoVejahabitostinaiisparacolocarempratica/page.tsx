@@ -3,18 +3,18 @@
 export default function noticia() {
     return (
         <>
-               <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+               <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
                     <div className="grow col-start-2 col-span-4 ">
-                     <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
+                     <h1 className="grow mb-[20px] sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                          Quer acordar mais disposto? Veja hábitos matinais para colocar em prática
                      </h1>
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                    <p className="sm:text-[24px] text-[18px] ">Especialistas dão dicas de cardápio matinal e rotina de autocuidados que vão ajudá-lo a ter mais foco e produtividade durante o dia</p>
+                    <p className=" text-[18px] ">Especialistas dão dicas de cardápio matinal e rotina de autocuidados que vão ajudá-lo a ter mais foco e produtividade durante o dia</p>
                     </div>
 
-                    <div className="grow col-start-2 col-span-4">
+                    <div className="grow col-start-2 col-span-4 mb-[40px] mt-[30px]">
                          <img src="/assets/imagens_saude/acordar_mais_disposto.png" alt="imagem de mulher acordando" />
                     </div>
 
@@ -50,7 +50,7 @@ export default function noticia() {
                               reuniu sugestões de como montar um cardápio matinal rico em nutrientes, dicas de autocuidado e atividades físicas, 
                               além da importância da prática para a saúde mental.
                          </p>
-                         <h2>Alimentação</h2>
+                         <h2 className="text-[30px] font-black">Alimentação</h2>
                          <p>
                               Serena Del Favero é nutricionista do Espaço Einstein Esporte e Reabilitação, do Hospital Albert Einstein. Ela 
                               destaca que a primeira refeição do dia precisa ser variada e deve, preferencialmente, ser rica em proteínas 
@@ -61,7 +61,7 @@ export default function noticia() {
                               Lembrando que a energia não vem apenas destes alimentos, mas, sim, de um café da manhã equilibrado e de uma boa 
                               noite de sono.”
                          </p>
-                         <h2>Exercícios</h2>
+                         <h2 className="text-[30px] font-black">Exercícios</h2>
                          <p>
                               Já está comprovado que a prática de exercícios traz inúmeros benefícios para a saúde mental e física direta ou 
                               indiretamente. A profissional de educação física do Espaço Einstein Esporte e Reabilitação Carla Giuliano de 
@@ -83,14 +83,14 @@ export default function noticia() {
                               E se você não sabe como começar a treinar, já listamos aqui várias dicas para driblar a indisposição e acrescentar, 
                               aos poucos, alguns exercícios na sua rotina!
                          </p>
-                         <h2>Bem-estar</h2>
+                         <h2 className="text-[30px] font-black">Bem-estar</h2>
                          <p>
                               Praticar esportes e ter uma alimentação saudável são itens essenciais para começar o dia bem. Mas existem alguns 
                               pontos que merecem ainda mais atenção, como a qualidade do sono, hábitos noturnos prejudiciais e outros cuidados 
                               com a saúde. Quem explica os detalhes é Sley Tanigawa Guimarães, especialista em acupuntura e medicina preventiva 
                               do Hospital Albert Einstein.
                          </p>
-                         <p>Dicas para melhorar a qualidade do sono</p>
+                         <p className="text-[20px] font-black">Dicas para melhorar a qualidade do sono</p>
                          <p>
                               Para acordar mais disposto e sem a sensação de cansaço, a médica aponta que o ideal é dormir por sete a nove 
                               horas: “Pouquíssimas pessoas no mundo precisam dormir menos do que sete ou mais do que nove!”
@@ -133,7 +133,7 @@ export default function noticia() {
                          <p>
                               Banho morno: esta tática também estimula o corpo a relaxar e começar a “desligar” para a hora de dormir.
                          </p>
-                         <h2>Os prejuízos de usar o celular antes de dormir</h2>
+                         <h2 className="text-[30px] font-black">Os prejuízos de usar o celular antes de dormir</h2>
                          <p>
                               Sley explica que, neste caso, existem dois pontos problemáticos que causam prejuízos à saúde e interferem no 
                               tempo de sono: a luz dos aparelhos e o tempo gasto nos eletrônicos. Ela também desmistifica a falsa sensação 
@@ -152,7 +152,7 @@ export default function noticia() {
                               joguinhos. Isso gera o contrário do que a gente deseja para o processo de adormecer, que é deixar o nosso 
                               cérebro cada vez mais calminho e com menos ruído.”
                          </p>
-                         <h2>Banho frio pela manhã</h2>
+                         <h2 className="text-[30px] font-black">Banho frio pela manhã</h2>
                          <p>
                               A técnica, certamente, ajuda a dar aquela despertada ao acordar... Mas será que isso faz bem mesmo? Para responder 
                               a esta pergunta, a especialista cita um estudo publicado na Biblioteca Nacional de Medicina dos Estados Unidos.
@@ -177,7 +177,7 @@ export default function noticia() {
                               “Pessoas que têm problema cardiovascular ou uma tendência à doença cardiovascular precisam tomar cuidado, porque 
                               tem uma mudança de frequência cardíaca e de pressão arterial muito grande e pode dar problema.”
                          </p>
-                         <h2>Cuidados com a pele</h2>
+                         <h2 className="text-[30px] font-black">Cuidados com a pele</h2>
                          <p>
                               O inverno é o período com maior tendência a tomar banhos quentes, se hidratar menos e, consequentemente, 
                               ficar com a pele mais ressecada. Para evitar esse tipo de situação, ela cita algumas dicas práticas:

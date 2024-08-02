@@ -3,15 +3,15 @@
 export default function noticia() {
     return (
         <>
-               <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+               <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
                     <div className="grow col-start-2 col-span-4 ">
-                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
+                         <h1 className="grow mb-[20px] sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem]">
                               Dados de filiação partidária revelam baixa participação política de jovens e mulheres
                          </h1>
                     </div>
 
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                         <p className="sm:text-[24px] text-[18px] ">Um ano após as Eleições 2022, número de filiados entre 16 e 24 anos caiu 14%. Maioria do eleitorado, mulheres 
+                    <div className="grow mb-[20px] sm:col-start-2 col-span-4 col-start-2 ">
+                         <p className=" text-[18px] ">Um ano após as Eleições 2022, número de filiados entre 16 e 24 anos caiu 14%. Maioria do eleitorado, mulheres 
                               correspondem a apenas 46% dos filiados
                          </p>
                     </div>
@@ -49,7 +49,7 @@ export default function noticia() {
                               esse grupo. Além disso, um ano após as Eleições Gerais de 2022, houve uma queda de 14% no quantitativo de filiações 
                               entre o eleitorado de 16 a 24 anos.
                          </p>
-                         <p>Veja reportagem no canal do TSE no YouTube.</p>
+                         <p className="font-black">Veja reportagem no canal do TSE no YouTube.</p>
                          <p>
                               Disponíveis na página de estatísticas eleitorais do Tribunal Superior Eleitoral (TSE), os dados de filiação 
                               partidária atualizados até outubro deste ano também mostram que a presença de mulheres nas legendas é bastante 
@@ -64,7 +64,7 @@ export default function noticia() {
                               Como exemplo, podemos citar a cota de gênero, que é a reserva de uma parte das candidaturas a um determinado 
                               gênero”, acrescenta o secretário.
                          </p>
-                         <h2>Quantidade de filiados</h2>
+                         <h2 className="text-[20px] font-black">Quantidade de filiados</h2>
                          <p>
                               Ainda de acordo com os dados atualizados, existem pouco mais de 15,8 milhões de pessoas registradas em partidos 
                               políticos no Brasil. A legenda com a maior quantidade de filiados é o Movimento Democrático Brasileiro (MDB), 
@@ -77,14 +77,20 @@ export default function noticia() {
                               eleitorado filiado. Em contrapartida, os sete com menos associados reúnem, ao todo, 117 mil filiações. O Partido 
                               Social Cristão (PSC) tem apenas 31 filiados, o menor número entre todas as 30 legendas registradas junto ao TSE.
                          </p>
-                         <h2>Evolução</h2>
+                         <div className="grow col-start-2 col-span-4">
+                              <img src="/assets/imagens_politica/pessoas.png" alt="imagem de pessoas" />
+                         </div>
+                         <h2 className="text-[20px] font-black">Evolução</h2>
                          <p>
                               A quantidade de filiadas e filiados a partidos políticos no Brasil caiu 5,7% nos últimos cinco anos. Em 2018, 
                               havia 16,8 milhões. Já em 2023, o número diminuiu para pouco mais de 15,8 milhões. A queda é contínua desde 
                               2019 e, apesar do aumento observado em 2020, a tendência de diminuição continuou nos anos seguintes. Confira 
                               no gráfico abaixo os valores absolutos:
                          </p>
-                         <h2>Perfil de filiação</h2>
+                         <div className="grow col-start-2 col-span-4">
+                              <img src="/assets/imagens_politica/pessoas.png" alt="imagem de pessoas" />
+                         </div>
+                         <h2 className="text-[20px] font-black">Perfil de filiação</h2>
                          <p>
                               As estatísticas mostram que a presença feminina na composição dos partidos é inferior à masculina, ainda que 
                               elas sejam a maioria entre os eleitores. Do total de filiados a agremiações partidárias no país, 8.524.714 

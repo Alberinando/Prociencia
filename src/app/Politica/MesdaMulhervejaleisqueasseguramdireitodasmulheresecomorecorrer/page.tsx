@@ -3,15 +3,15 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
-                    <div className="grow col-start-2 col-span-4 ">
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
+                    <div className="grow col-start-2 col-span-4 mb-[20px]">
                      <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                         Mês da Mulher: veja leis que asseguram direito das mulheres e como recorrer
                      </h1>
                     </div>
 
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                    <div className="grow sm:col-start-2 col-span-4 col-start-2 mb-[20px]">
+                        <p className=" text-[18px] ">
                             Leis combatem discriminação e violência contra mulheres em diversas categorias, como doméstica, sexual e política
                         </p>
                     </div>
@@ -41,7 +41,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-4 text-[18px] mt-[20px]">
                         <p>
                             Daqui a cinco dias, será celebrado o Dia Internacional da Mulher. Apesar das conquistas desde antes da criação da 
                             data, em 1977, pelas Nações Unidas (ONU), o Brasil ainda está longe do ideal de igualdade entre gêneros.
@@ -59,7 +59,7 @@ export default function noticia() {
                             De 1988 para cá, leis vêm sendo criadas para reforçar o combate à violência contra a mulher e para garantir 
                             direitos. Veja abaixo algumas das principais e como podem ser aplicadas:
                         </p>
-                        <h2>Lei Maria da Penha</h2>
+                        <h2 className="text-[20px] font-black">Lei Maria da Penha</h2>
                         <p>
                             A Lei Maria da Penha foi sancionada em 2006 com o objetivo de coibir e prevenir a violência doméstica e familiar 
                             contra as mulheres. A norma é uma homenagem à Maria da Penha Maia, que sofreu violência doméstica por parte do 
@@ -87,7 +87,7 @@ export default function noticia() {
                             polícia. A partir da denúncia, a lei determina o encaminhamento das vítimas e dos dependentes das vítimas a 
                             programas e serviços de proteção e de assistência social.
                         </p>
-                        <h2>Lei da Importunação Sexual</h2>
+                        <h2 className="text-[20px] font-black">Lei da Importunação Sexual</h2>
                         <p>
                             Proposta pela então senadora Vanessa Grazziotin (PCdoB-AM) em 2016, a Lei da Importunação Sexual só foi aprovada 
                             e sancionada em 2018. O texto ganhou força após a divulgação de casos de homens que se masturbaram e ejacularam 
@@ -109,7 +109,7 @@ export default function noticia() {
                             qualquer pessoa via "Disque Mulher" 180 ou para a polícia. Segundo especialistas, ao fazer a representação, as 
                             vítimas devem citar e pedir que o caso seja enquadrado pela Lei de Importunação Sexual.
                         </p>
-                        <h2>Lei do Acompanhante</h2>
+                        <h2 className="text-[20px] font-black">Lei do Acompanhante</h2>
                         <p>
                             A Lei do Acompanhante foi proposta pela então senadora Ideli Salvatti (PT-SC) e sancionada em 2005, durante o 
                             primeiro governo de Luiz Inácio Lula da Silva (PT).
@@ -137,7 +137,7 @@ export default function noticia() {
                         <p>
                             ▶️ COMO APLICAR: qualquer violação à lei pode ser denunciada à Defensoria Pública municipal ou para a Ouvidoria do Ministério da Saúde, por meio do telefone 136.
                         </p>
-                        <h2>Lei Carolina Dieckmann</h2>
+                        <h2 className="text-[20px] font-black">Lei Carolina Dieckmann</h2>
                         <p>
                             A lei de combate a crimes cibernéticos, mais conhecida como lei Carolina Dieckmann, foi sancionada em maio de 2012 
                             pela ex-presidente Dilma Rousseff.
@@ -163,7 +163,7 @@ export default function noticia() {
                             ▶️ COMO APLICAR: ao sofrer um crime cibernético, a vítima deve buscar uma delegacia de polícia para registrar um 
                             Boletim de Ocorrência. Caberá ao setor de crimes digitais da Polícia Civil local dar seguimento ao caso.
                         </p>
-                        <h2>Lei Joanna Maranhão</h2>
+                        <h2 className="text-[20px] font-black">Lei Joanna Maranhão</h2>
                         <p>
                             A lei nº 12.650 de 2012, mais conhecida como Lei Joanna Maranhão, estende o prazo de prescrição – perda do direito 
                             de ação por decurso do tempo – dos crimes sexuais cometidos contra crianças e adolescentes.
@@ -177,7 +177,7 @@ export default function noticia() {
                             Público não tenha antes aberto ação penal contra o agressor. Até então, o tempo para prescrição era calculado a 
                             partir da data da prática do crime.
                         </p>
-                        <h2>Lei do Voto</h2>
+                        <h2 className="text-[20px] font-black">Lei do Voto</h2>
                         <p>
                             A nível nacional, a conquista das mulheres do direito ao voto foi gradual. Se tornou facultativo nos anos de 1930 
                             por meio de um decreto do então presidente Getúlio Vargas e, posteriormente, incorporado na Constituição promulgada 
@@ -188,7 +188,7 @@ export default function noticia() {
                             que criou o Código Eleitoral, sancionada pelo então presidente Castello Branco, estabeleceu que o "alistamento e o 
                             voto são obrigatórios para os brasileiros de um e outro sexo".
                         </p>
-                        <h2>Desafios na política</h2>
+                        <h2 className="text-[20px] font-black">Desafios na política</h2>
                         <p>
                             Embora tenham igual direito ao voto, as mulheres ainda seguem com desafios em relação à representação política. O 
                             Poder Legislativo, conhecido como representante do povo brasileiro, tem baixas taxas de ocupação feminina em todo 
@@ -219,7 +219,7 @@ export default function noticia() {
                             Novas legislações incentivam a participação feminina nas eleições entraram em vigor nas últimas décadas para 
                             tentar corrigir a distorção.
                         </p>
-                        <h2>Reserva de candidaturas por gênero</h2>
+                        <h2 className="text-[20px] font-black">Reserva de candidaturas por gênero</h2>
                         <p>
                             Uma minirreforma eleitoral, de 2009, introduziu na Lei das Eleições uma reserva de candidaturas ao Legislativo por gênero.
                         </p>
@@ -243,7 +243,7 @@ export default function noticia() {
                             ▶️ COMO APLICAR: denúncias sobre o descumprimento dessas regras podem ser feitas ao Ministério Público Eleitoral 
                             dos estados.
                         </p>
-                        <h2>Lei da violência política contra mulheres</h2>
+                        <h2 className="text-[20px] font-black">Lei da violência política contra mulheres</h2>
                         <p>
                             Em 2021, o ex-presidente Jair Bolsonaro (PL) sancionou uma lei que atualiza o Código Eleitoral brasileiro para tipificar 
                             como crime eleitoral a violência política contra as mulheres.

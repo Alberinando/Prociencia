@@ -4,7 +4,7 @@ export default function noticia() {
     return (
         <>
 
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid space-y-8 font-Arial sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Sony corta 900 empregos da PlayStation e fecha estúdio em Londres
@@ -12,7 +12,7 @@ export default function noticia() {
                     </div>
 
                      <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Medida ocorre após companhia reduzir expectativa anual de vendas do PlayStation 5
                         </p>
                     </div>
@@ -42,7 +42,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             A Sony está cortando cerca de 900 empregos em sua unidade PlayStation e fechando um estúdio em Londres, informou a 
                             companhia nesta terça-feira (27), enquanto a indústria de videogames tenta se recuperar de uma crise pós-pandemia.

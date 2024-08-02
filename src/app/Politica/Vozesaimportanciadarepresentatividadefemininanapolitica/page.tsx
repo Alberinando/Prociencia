@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Vozes: a importância da representatividade feminina na política
@@ -67,7 +67,7 @@ export default function noticia() {
                                 de preencher cotas de gênero, mas de garantir que as vozes, preocupações e perspectivas das mulheres sejam ouvidas 
                                 e consideradas nas políticas públicas, inclusive, que seus direitos sejam defendidos. 
                         </p>
-                        <h2>Mais mulheres em espaços de poder: qual o impacto gerado?</h2>
+                        <h2 className="text-[20px] font-black">Mais mulheres em espaços de poder: qual o impacto gerado?</h2>
                         <p>
                                 Como ponto de partida para responder a esse questionamento, podemos sinalizar o dado o qual mostra que, quando 
                                 mulheres estão ocupando posições de liderança no setor público, existe uma probabilidade 35% menor de envolvimento 

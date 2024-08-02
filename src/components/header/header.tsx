@@ -1,4 +1,144 @@
-"use client"
+"use client";
+import React, { useState } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+
+const Header = () => {
+    const [showOptions, setShowOptions] = useState(false);
+    const [dropdownIndex, setDropdownIndex] = useState(null);
+
+    const toggleOptions = () => {
+        setShowOptions(!showOptions);
+    };
+
+    const toggleDropdown = (index) => {
+        setDropdownIndex(dropdownIndex === index ? null : index);
+    };
+
+    return (
+        <div className="bg-roxo-p08 relative z-10">
+            <div className="p-4 grid grid-cols-12 gap-4">
+                <div className="grid col-start-1 sm:col-span-1 col-span-2 block md:hidden">
+                    <button onClick={toggleOptions} aria-label="Toggle Menu">
+                        <Image
+                            src="/assets/Imagens_aleatorias/icons8-cardápio-24.png"
+                            alt="Minha Imagem"
+                            width={30}
+                            height={30}
+                        />
+                    </button>
+
+                    {showOptions && (
+                        <div className="bg-branco text-center absolute top-16 left-0 right-0 w-2/3">
+                            <ul>
+                                <li>
+                                    <Link href="../../Ciencia/Conheça4startupsbrasileirasquevaoaoSXSW2024" className="block px-4 py-2 mt-4 text-preto">
+                                        Notícias
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 text-preto">
+                                        Saúde
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 text-preto">
+                                        Comportamento
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 text-preto">
+                                        Moda e Beleza
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 text-preto mb-8">
+                                        Entretenimento
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    )}
+                </div>
+
+                <div className="grid md:col-start-2 col-span-1 col-start-3 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-branco">
+                    Logo
+                </div>
+
+                <div className="relative grid col-start-3 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
+                    <button onClick={() => toggleDropdown(1)} className="focus:outline-none">
+                        Notícias
+                    </button>
+                    {dropdownIndex === 1 && (
+                        <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg">
+                            <ul>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Economia</li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Política</li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Ciência</li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Tecnologia</li>
+                            </ul>
+                        </div>
+                    )}
+                </div>
+
+                <div className="relative grid col-start-4 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
+                    <button onClick={() => toggleDropdown(2)} className="focus:outline-none">
+                        Saúde
+                    </button>
+                    {dropdownIndex === 2 && (
+                        <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg">
+                            <ul>
+                                <li className="px-4 py-2 hover:bg-gray-200">Item 1</li>
+                                <li className="px-4 py-2 hover:bg-gray-200">Item 2</li>
+                                <li className="px-4 py-2 hover:bg-gray-200">Item 3</li>
+                                <li className="px-4 py-2 hover:bg-gray-200">Item 4</li>
+                            </ul>
+                        </div>
+                    )}
+                </div>
+
+                <div className="grid col-start-5 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
+                    Comportamento
+                </div>
+                <div className="grid col-start-7 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
+                    Moda e Beleza
+                </div>
+                <div className="grid col-start-9 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
+                    Entretenimento
+                </div>
+
+                <div className="grid md:col-start-11 col-span-2 md:w-2/3 col-start-10 col-span-3">
+                    <div className="flex items-center border border-roxo-p08 rounded focus-within:ring-4 focus-within:ring-roxo-p08 bg-cinza-escuro p-0.2">
+                        <Image
+                            src="/assets/Imagens_aleatorias/lupa.png" 
+                            alt="Buscar"
+                            className="ml-2"
+                            width={20} 
+                            height={20} 
+                        />
+                        <input
+                           type="text"
+                           className="ml-2 w-full p-0.5 focus:outline-none bg-cinza placeholder-branco placeholder-border-black"
+                           placeholder="Buscar"
+                        />
+                    </div>    
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Header;
+
+
+
+
+
+
+
+
+
+{/*"use client"
 import React, { useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,10 +151,10 @@ const Header = () => {
     };
 
     return (
-        <div className="bg-rosa relative z-10 w-full">
-            <div className="text-black p-6 w-full flex flex-row text-sm md:text-base lg:text-lg xl:text-xl">
-                {/* Menu hamburguer para dispositivos móveis */}
-                <div className="mt-1 sm:hidden w-full ">
+        <div className="bg-rosa   relative z-10 ">
+            <div className="text-black p-6  flex flex-row text-sm md:text-base lg:text-lg xl:text-xl">
+               
+                <div className="mt-1 sm:hidden">
                     <div className="flex flex-row ">
                         <button onClick={toggleOptions} aria-label="Toggle Menu">
                             <Image
@@ -27,7 +167,7 @@ const Header = () => {
                         <div className="mt-1 ml-4">Logo</div>
                     </div>
                     {showOptions && (
-                        <div className="bg-rosa w-full text-center absolute top-16 left-0 right-0">
+                        <div className="bg-rosa text-center absolute top-16 left-0 right-0">
                             <ul>
                                 <li>
                                     <Link href="../../Ciencia/Conheça4startupsbrasileirasquevaoaoSXSW2024" className="block px-4 py-2 mt-4 text-preto">
@@ -59,8 +199,8 @@ const Header = () => {
                     )}
                 </div>
 
-                {/* Navegação para dispositivos maiores */}
-                <div className="hidden sm:flex flex-row items-center justify-center z-10 space-x-10 w-full "> {/* Adicionando 'z-10' para definir o z-index */}
+              
+                <div className="hidden sm:flex flex-row items-center justify-center z-10 space-x-10  ">
                     <div className="ml-4 mr-4 ">Logo</div>
                     <ul className="flex space-x-10 justify-items-center items-center">
                         <li>
@@ -96,4 +236,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header;*/}

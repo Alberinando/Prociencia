@@ -3,19 +3,19 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid  font-Arial space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             As dificuldades do jogo amoroso para as mulheres mais velhas
                         </h1>
                     </div>
 
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                    <div className="grow space-y-8 sm:col-start-2 col-span-4 col-start-2 ">
+                        <p className=" text-[18px] ">
                             Psicóloga que trabalha com público acima dos 50 diz que é preciso investir na autoestima e se sentir confortável 
                             consigo mesma, em vez de querer agradar a qualquer custo
                         </p>
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             É claro que há muitas mulheres acima dos 50 anos que têm relacionamentos afetivos satisfatórios e estáveis, mas as 
                             que mais interessam à psicóloga e coach Jael Klein Coaracy, que tem pós-graduação em terapia cognitiva 
                             comportamental e trabalha com esse segmento, são aquelas que se sentem solitárias e as que estão mal acompanhadas.
@@ -47,7 +47,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             “Há mulheres que ficam sozinhas e decidem que tal situação não define suas vidas, seguindo em frente. No entanto, 
                             há também as que ficam bastante deprimidas e amarguradas porque não têm parceiro, ou se submetem a relações 

@@ -3,15 +3,15 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
-                    <div className="grow col-start-2 col-span-4 ">
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
+                    <div className="grow col-start-2 col-span-4 mb-[20px]">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                         Surto, epidemia, pandemia e endemia: entenda a diferença e quais se aplicam no cenário da dengue no Brasil
                         </h1>
                     </div>
 
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">Mundo viveu a pandemia de Covid-19. No Brasil, alguns locais estão declarando epidemia por causa da dengue.</p>
+                    <div className="grow sm:col-start-2 col-span-4 col-start-2 mb-[20px]">
+                        <p className=" text-[18px] ">Mundo viveu a pandemia de Covid-19. No Brasil, alguns locais estão declarando epidemia por causa da dengue.</p>
                     </div>
 
                     <div className="grow col-start-2 col-span-4">
@@ -39,16 +39,16 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-4 text-[18px] mt-[20px]">
                         <p>
                             Durante a Covid-19, a palavra pandemia ficou bastante conhecida. Agora, com a dengue em alta, é normal se deparar com 
                             termos como epidemia, endemia e surto. E você sabe qual a diferença entre eles?
                         </p>
-                        <h2>Surto</h2>
+                        <h2 className="text-[20px] font-black">Surto</h2>
                         <p>
                             O surto é algo localizado. Pode ser um surto de gripe na empresa, surto de catapora em uma creche, por exemplo.
                         </p>
-                        <h2>Epidemia</h2>
+                        <h2 className="text-[20px] font-black">Epidemia</h2>
                         <p>
                             Uma epidemia ocorre quando temos um aumento inesperado no número de casos de uma doença em uma área geográfica 
                             específica. Febre amarela, varíola e dengue são excelentes exemplos de epidemias.
@@ -67,12 +67,12 @@ export default function noticia() {
                             As epidemias podem referir-se a uma doença ou a outro comportamento específico relacionado com a saúde 
                             (por exemplo, tabagismo) com taxas claramente acima da ocorrência esperada numa comunidade ou região.
                         </p>
-                        <h2>Pandemia</h2>
+                        <h2 className="text-[20px] font-black">Pandemia</h2>
                         <p>
                             A pandemia é uma epidemia que se espalhou por todas as regiões do planeta, afetando muitas pessoas. O exemplo 
                             mais recente é a pandemia de Covid-19.
                         </p>
-                        <h2>Endemia</h2>
+                        <h2 className="text-[20px] font-black">Endemia</h2>
                         <p>
                             A endemia não está relacionada a uma questão quantitativa. É a presença contínua de uma enfermidade ou de um 
                             agente infeccioso em uma zona geográfica determinada.

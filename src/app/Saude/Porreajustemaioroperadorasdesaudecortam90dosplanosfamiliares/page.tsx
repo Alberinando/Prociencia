@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-            <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+            <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
                 <div className="grow col-start-2 col-span-4 ">
                     <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                         Por reajuste maior, operadoras de saúde cortam 90% dos planos familiares
@@ -11,7 +11,7 @@ export default function noticia() {
                 </div>
 
                 <div className="grow col-start-2 col-span-4">
-                    <img src="/assets/imagens_saude/planos_coletivos.png" alt="imagem de mulher andando em coredor" />
+                    <img src="/assets/imagens_saude/Reajuste_de_planos.png" alt="imagem de mulher andando em coredor" />
                 </div>
 
                 <div className="grow overflow-hidden   sm:col-start-6 col-span-3 col-start-2 col-span-4 space-y-4   m-0 sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px]">
@@ -41,7 +41,7 @@ export default function noticia() {
                         operadoras de saúde estão reduzindo a oferta de planos individuais e familiares enquanto aumentam a de planos 
                         coletivos, cujo índice de reajuste não é decidido pela agência reguladora.
                     </p>
-                    <h2>O que aconteceu</h2>
+                    <h2 className="text-[18px] font-black">O que aconteceu</h2>
                     <p>
                         A ANS só define o reajuste dos planos vendidos diretamente a uma pessoa ou família. Em 2023, a agência aumentou 
                         a mensalidade em 9,6%. Já os planos coletivos são vendidos para empresas ou a determinadas categorias (como 
@@ -52,21 +52,35 @@ export default function noticia() {
                         planos individuais e familiares por município, em média. Em junho de 2023 — último disponível —, havia 18 
                         planos, segundo dados fornecidos pela ANS a pedido do UOL
                     </p>
-                    <h2>Cai a média de planos individuais em comercialização por município</h2>
+                    <h2 className="text-[18px] font-black">Cai a média de planos individuais em comercialização por município</h2>
+
+                    <div className="grow col-start-2 col-span-4">
+                        <img src="/assets/imagens_saude/planos_individuais.png" alt="imagem de mulher andando em coredor" />
+                    </div>
+
                     <p>
                         Já o total de planos coletivos à venda cresceu 50% entre dezembro de 2013 a junho de 2023. Passou de 1031 para 
                         1556 segundo média da ANS que contabiliza os planos existentes em todos os municípios brasileiros. Em dezembro 
                         de 2023, os planos individuais e familiares contavam com 8,8 milhões de beneficiários, enquanto os coletivos 
                         somavam 42,2 milhões de segurados.
                     </p>
-                    <h2>Cresce a média de planos coletivos em comercialização por município</h2>
-                    <h2>Proporção de pessoas com planos individuais diminui no Brasil</h2>
+                    <h2 className="text-[18px] font-black">Cresce a média de planos coletivos em comercialização por município</h2>
+
+                    <div className="grow col-start-2 col-span-4">
+                        <img src="/assets/imagens_saude/planos_coletivos.png" alt="imagem de mulher andando em coredor" />
+                     </div>
+
+                    <h2 className="text-[18px] font-black">Proporção de pessoas com planos individuais diminui no Brasil</h2>
+
+                    <div className="grow col-start-2 col-span-4">
+                        <img src="/assets/imagens_saude/comercializacao.png" alt="imagem de mulher andando em coredor" />
+                    </div>
                     <p>
                         O número de operadoras vendendo planos de saúde caiu de modo geral no Brasil. Mas essa redução é maior entre as 
                         seguradoras que vendem planos individuais e familiares: queda de 85,5%, contra redução de 33,6% entre as que 
                         comercializam planos empresariais e por adesão.
                     </p>
-                    <h2>Coletivos são menos regulados</h2>
+                    <h2 className="text-[18px] font-black">Coletivos são menos regulados</h2>
                     <p>
                         O reajuste dos planos individuais passou a ser feito pela ANS depois de sua criação, em 2000. "Como nos coletivos as 
                         operadoras não precisam seguir critério para fixar um índice, com o tempo as operadoras priorizaram a comercialização 
@@ -117,7 +131,7 @@ export default function noticia() {
                         de cada uma os tipos de plano que irá comercializar.”
                     </p>
                     <p>ANS, em nota.</p>
-                    <h2>Operadoras admitem redução</h2>
+                    <h2 className=" font-black">Operadoras admitem redução</h2>
                     <p>
                         A regulação em vigor "tem inibido a oferta desse tipo de produto", diz a FenaSaúde (Federação Nacional de Saúde 
                         Suplementar). "O reajuste autorizado pela ANS para os planos individuais tem sido sistematicamente inferior ao 

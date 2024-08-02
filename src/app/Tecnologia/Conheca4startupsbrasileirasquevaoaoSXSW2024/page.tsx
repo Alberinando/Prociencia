@@ -3,15 +3,15 @@
 export default function noticia() {
     return (
         <>
-            <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+            <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
                     <div className="grow col-start-2 col-span-4 ">
-                        <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
+                        <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] mb-[50px]">
                             Conheça 4 startups brasileiras que vão ao SXSW 2024
                         </h1>
                     </div>
 
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">O evento que reúne tecnologia, música, inovações e cultura acontece de 08 a 16 de março de 2024</p>
+                    <div className="grow sm:col-start-2 col-span-4 col-start-2 mb-[30px]">
+                        <p className=" text-[18px] ">O evento que reúne tecnologia, música, inovações e cultura acontece de 08 a 16 de março de 2024</p>
                     </div>
                     
                     <div className="grow col-start-2 col-span-4">
@@ -27,7 +27,7 @@ export default function noticia() {
                        <div className="">
                         <input
                                 type="text"
-                                className=" w-full p-2 border border-gray rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className=" p-2 border border-gray rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 placeholder="Digite aqui..."
                             />
                        </div>
@@ -39,7 +39,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className=" col-start-2 col-span-4 space-y-4 text-[18px] mt-[50px]">
                         <p>O South by Southwest, mais conhecido como SXSW, acontece anualmente em março, em Austin, nos Estados Unidos e é 
                             considerado um dos maiores eventos de tecnologia, música, inovações e cultura do mundo, trazendo ainda, atrações 
                             de diferentes países.
@@ -59,8 +59,11 @@ export default function noticia() {
                             acesso ao evento, os empreendedores terão a oportunidade de se conectar com parceiros das instituições que 
                             estarão presentes no evento e na Casa Dell, sediada em Austin.
                         </p>
-                        <h2>Conheça as startups que irão ao SXSW 2024:</h2>
-                        <h3>School Guardian</h3>
+                        <div>
+                            <h2 className="text-[24px] mt-[80px] mb-[20px] font-black">Conheça as startups que irão ao SXSW 2024:</h2>
+                        </div>
+                       
+                        <h3 className="text-[20px] font-black">School Guardian</h3>
                         <p>
                             A tecnologia da School Guardian aumenta a segurança de estudantes, pais e equipes escolares, ao oferecer pacotes 
                             completos de funcionalidades que vão desde rastreamento de transporte escolar, gestão de autorizações de saída, 
@@ -72,7 +75,7 @@ export default function noticia() {
                             como Brasil, Estados Unidos, Portugal, Peru, Bahamas, Uruguai, Paraguai, Egito e Malásia. Mais de 300 mil 
                             alunos, pais ou responsáveis utilizam o aplicativo.
                         </p>
-                        <h3>Yours Bank</h3>
+                        <h3 className="text-[20px] font-black">Yours Bank</h3>
                         <p>
                             A Yours é a primeira empresa a desenvolver soluções bancárias digitais para crianças e adolescentes no Brasil. 
                             Criada em 2021, a fintech foi premiada no Startup Challenge do primeiro South Summit Brazil, no ano seguinte. 
@@ -83,14 +86,14 @@ export default function noticia() {
                             Em 2024, a startup vai mergulhar ainda mais na missão de transformar o país através da educação, levando conteúdo 
                             de qualidade para pais e filhos que se preocupam com o futuro financeiro da família.
                         </p>
-                        <h3>Dadosfera</h3>
+                        <h3 className="text-[20px] font-black">Dadosfera</h3>
                         <p>
                             A Dadosfera é uma Plataforma de Data, AI e Analytics focada no negócio. Através da Inteligência de Dados, a 
                             plataforma integra etapas de Coleta, Processamento, Exploração e Análise, toda a jornada apoiada em uma gestão 
                             de acesso que promove a governança dos dados da sua organização e entrega aplicativos para o negócio, tudo 
                             isso sem depender de um time de dados especializado.
                         </p>
-                        <h3>Pix Force</h3>
+                        <h3 className="text-[20px] font-black">Pix Force</h3>
                         <p>
                             A Pix Force desenvolve inteligência artificial capaz de interpretar imagens e vídeos para a tomada de decisão nas 
                             indústrias. Com sedes no Brasil, Estados Unidos e Finlândia e com um portfólio de clientes que conta com gigantes 

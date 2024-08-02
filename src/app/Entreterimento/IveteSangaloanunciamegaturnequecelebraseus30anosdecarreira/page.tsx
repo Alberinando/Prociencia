@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Ivete Sangalo anuncia mega turnê que celebra seus 30 anos de carreira
@@ -11,12 +11,12 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             ‘A Festa’ irá percorrer 30 cidades e começará em junho, em Manaus
                         </p>
                     </div>
 
-                    <div className="grow col-start-2 col-span-4">
+                    <div className="grow col-start-2 col-span-4 mb-[20px]">
                         <img src="/assets/imagens_entretedimento/Ivete_Sangalo.png" alt="imagem de Ivete Sangalo" />
                     </div>
 
@@ -41,7 +41,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                                 Ivete Sangalo acaba de anunciar como será sua mega turnê que irá celebrar seus 30 anos de carreira. A Festa irá 
                                 percorrer 30 cidades do Brasil.
@@ -49,12 +49,12 @@ export default function noticia() {
                         <p>
                                 O primeiro show começará no dia 1 de junho, em Manaus, e depois segue viagem, contabilizando um total de 30 shows.
                         </p>
-                        <h2>Saiba tudo sobre Ivete 3.0</h2>
+                        <h2 className="text-[20px] font-black">Saiba tudo sobre Ivete 3.0</h2>
                         <p>
                                 No playlist de Veveta, vão estar presentes seus sucessos mais antigos como “Abalou”, “Se Eu Não Te Amasse Tanto 
                                 Assim”, “Arerê e os mais recentes como “Cria da Ivete”, “Rua da Saudade”, “Gigante” e, claro, seu hit “Macetando”.
                         </p>
-                        <h2>Veja o cronograma dos shows para você se programar:</h2>
+                        <h2 className="text-[20px] font-black">Veja o cronograma dos shows para você se programar:</h2>
                         <p>
                                 01 de Junho - Manaus
                                 29 de Junho - Belém
@@ -87,7 +87,7 @@ export default function noticia() {
                                 05 de Abril de 2025 - local ainda será anunciado
                                 12 de Abril de 2025 - local ainda será anunciado
                         </p>
-                        <h2>No Maracanã</h2>
+                        <h2 className="text-[20px] font-black">No Maracanã</h2>
                         <p>
                                 No dia 20 de dezembro a cantora deu início as comemorações de seus 30 anos com um show inesquecível no estádio do Maracanã, no Rio.
                         </p>

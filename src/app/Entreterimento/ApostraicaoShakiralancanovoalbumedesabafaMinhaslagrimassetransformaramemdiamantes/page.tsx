@@ -3,21 +3,21 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
-                    <div className="grow col-start-2 col-span-4 ">
+                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 font-Arial" >
+                    <div className="grow col-start-2 col-span-4 mb-[20px]">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Após traição, Shakira lança novo álbum e desabafa: 'Minhas lágrimas se transformaram em diamantes'
                         </h1>
                     </div>
 
-                    <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                    <div className="grow sm:col-start-2 col-span-4 col-start-2 mb-[20px]">
+                        <p className="text-[18px] ">
                             Cantora anunciou a data de lançamento de seu novo disco e falou sobre o processo de composição das músicas: 'Enquanto 
                             escrevia cada música, eu estava me reconstruindo'
                         </p>
                     </div>
 
-                    <div className="grow col-start-2 col-span-4">
+                    <div className="grow col-start-2 col-span-4 mb-[20px]">
                         <img src="/assets/imagens_entretedimento/Shakira.png" alt="imagem de Shakira" />
                     </div>
 
@@ -42,7 +42,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                                 Shakira acaba de anunciar seu mais novo álbum "Las Mujeres Ya No Lloran" ("As mulheres já não choram"). Em suas redes 
                                 sociais, ela também divulgou a data de lançamento do disco, que classificou como "processo alquímico", para o dia 
@@ -61,7 +61,7 @@ export default function noticia() {
                                 Nelly Furtado, uma das grandes cantoras do início dos anos 2000, colocou emojis de coroa (👑) nos comentários do 
                                 post. Shakira foi casada com o ex-jogador de futebol Gerard Piqué por 11 anos e teve dois filhos, Sasha e Milan.
                         </p>
-                        <h2>Relembre a separação:</h2>
+                        <h2 className="text-[20px] font-black">Relembre a separação:</h2>
                         <p>
                                 Shakira e Piqué emitiram um comunicado em conjunto no dia 4 de junho de 2022 anunciando a separação. "Lamentamos 
                                 confirmar que estamos nos separando. Pelo bem-estar de nossos filhos, que são nossa máxima prioridade, pedimos 

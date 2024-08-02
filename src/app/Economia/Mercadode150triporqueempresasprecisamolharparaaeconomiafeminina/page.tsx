@@ -6,7 +6,7 @@ export default function noticia() {
 
 
     
-               <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+               <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28 space-y-8" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Mercado de R$ 150 tri: por que empresas precisam olhar para a economia feminina
@@ -14,7 +14,7 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className="text-[18px] ">
                             As mulheres representam 85% dos gastos de consumidores globalmente, mas potencial feminino nos negócios continua sendo 
                             ignorado
                         </p>
@@ -45,7 +45,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                                 Beyoncé, Barbie e Taylor Swift recentemente provaram que há um inegável poder feminino na economia. Enquanto o 
                                 filme dirigido por Greta Gerwig se tornou o longa de maior bilheteria do ano com apenas seis semanas nos cinemas, 
@@ -76,7 +76,7 @@ export default function noticia() {
                                 acessíveis às mulheres de diferentes níveis de renda, capacitando-as a tomar decisões financeiras acertadas e 
                                 melhorar o seu bem-estar econômico.
                         </p>
-                        <h2>Mulheres são um grupo diverso</h2>
+                        <h2 className="text-[20px] font-black">Mulheres são um grupo diverso</h2>
                         <p>
                                 Também é fundamental reconhecer que as mulheres não são um mercado único. Metade da população mundial abrange 
                                 diferentes experiências e necessidades financeiras.

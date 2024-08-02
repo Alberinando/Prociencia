@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid font-Arial space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             "Mulheres são os motores do crescimento econômico", diz Melinda Gates
@@ -11,7 +11,7 @@ export default function noticia() {
                     </div>
 
                      <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Em conferência sobre inclusão, a cientista da comunicação e filantropa comenta sobre o potencial da paridade 
                             econômica das mulheres contribuir com US$12 trilhões para a economia global
                         </p>
@@ -42,7 +42,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             A paridade econômica das mulheres contribuiria com US$12 trilhões para a economia global, de acordo com o Fórum 
                             Econômico Mundial. Você pode pensar que um número dessa mobilizaria recursos para aproveitar a oportunidade de 
@@ -58,7 +58,7 @@ export default function noticia() {
                             países em desenvolvimento, Melinda French Gates disse ao público que, ao não capacitar as mulheres, estamos perdendo grande 
                             crescimento econômico – prosperidade que é desesperadamente necessária hoje em todo o mundo.
                         </p>
-                        <h2>O que é preciso para maximizar a capacidade das mulheres de fazer a economia crescer (o que, no final, beneficia todos)?</h2>
+                        <h2 className="text-[20px] font-black">O que é preciso para maximizar a capacidade das mulheres de fazer a economia crescer (o que, no final, beneficia todos)?</h2>
                         <p>
                             Melinda French Gates estava acompanhada por outros palestrantes da conferência: Trevor Noah, comediante, Maria Teresa 
                             Kumar, fundadora e CEO da Ong de empoderamento de latinos Voto Latino, Samantha Power, administradora da Agência dos 
@@ -77,7 +77,7 @@ export default function noticia() {
                             Estamos falando, felizmente, sobre mudanças climáticas porque isso é muito importante, mas não estamos falando dessa 
                             oportunidade incrível de prosperar. As mulheres são motores econômicos do crescimento.”
                         </p>
-                        <h2>Barreiras sociais e soluções para a equidade de gênero</h2>
+                        <h2 className="text-[20px] font-black">Barreiras sociais e soluções para a equidade de gênero</h2>
                         <p>
                             “Como podemos garantir que elas atinjam todo o seu potencial?”, Melinda French Gates perguntou. “Falamos há muito 
                             tempo sobre empoderar as mulheres, mas, se falarmos apenas sobre isso, não estamos olhando para as barreiras sociais 
@@ -100,7 +100,7 @@ export default function noticia() {
                             ajudou seu pai a trabalhar pela família. “Eu cortava grama e fazia outros trabalhos para contribuir para a renda da 
                             minha família. Foi esse dinheiro que me permitiu cursar a faculdade”.
                         </p>
-                        <h2>A importância do empoderamento financeiro para as mulheres</h2>
+                        <h2 className="text-[20px] font-black">A importância do empoderamento financeiro para as mulheres</h2>
                         <p>
                             Uma das histórias mais emocionantes da conferência foi a de Gates sobre uma mulher em um país de baixa renda com 
                             quem ela esteve em contato nos últimos dois anos. Segundo ela, a mulher havia conseguido alguns recursos financeiros 
@@ -115,7 +115,7 @@ export default function noticia() {
                             “É por isso que acho que temos que falar sobre dinheiro e mulheres tendo seus próprios recursos financeiros, porque 
                             é só assim que ela tem poder e, consequentemente, muda o mundo para melhor.”
                         </p>
-                        <h2>O impacto do empoderamento das mulheres nos homens</h2>
+                        <h2 className="text-[20px] font-black">O impacto do empoderamento das mulheres nos homens</h2>
                         <p>
                             “Quando damos poder às mulheres, muitas vezes não pensamos em como isso alivia a pressão sobre os homens”, disse 
                             Trevor Noah sobre como o benefício do empoderamento financeiro das mulheres também recai sobre os homens, discussão 

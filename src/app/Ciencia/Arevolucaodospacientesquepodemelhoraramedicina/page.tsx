@@ -11,13 +11,14 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Livro 'Rebel health' ('Saúde rebelde') mostra que avanços no tratamento de doenças raras ou crônicas partiram da 
                             mobilização das próprias pessoas ou de seus cuidadores.
                         </p>
                     </div>
+                  
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Com a experiência de quem esteve à frente da área de tecnologia do Departamento de Saúde e Serviços Humanos dos EUA, 
                             responsável por zelar pelo bem-estar dos norte-americanos, Susannah Fox decidiu auxiliar as pessoas a transitar no 
                             árido território que permite um melhor acesso à saúde. Ela acaba de lançar “Rebel health” (em tradução livre, “Saúde 
@@ -26,11 +27,6 @@ export default function noticia() {
                             conhecidas e pesquisadas, como os diversos tipos de câncer.
                         </p>
                     </div>
-
-                    <div className="grow col-start-2 col-span-4">
-                    <img src="/assets/imagens_ciencia/Susannah_Fox.png" alt="imagem de Susannah Fox"/>
-                    </div>
-
                     <div className="grow overflow-hidden   sm:col-start-6 col-span-3 col-start-2 col-span-4 space-y-4   m-0 sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px]">
                         <div className="bg-darkgray flex justify-center ">
                             <h1 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[27px] xl:text-[32px] text-center self-center  bg-darkgray">NEWSLETTER HORÓSCOPO</h1>
@@ -51,8 +47,13 @@ export default function noticia() {
                         </div>
 
                     </div>
+
+                    <div className="grow col-start-2 col-span-4">
+                    <img src="/assets/imagens_ciencia/Susannah_Fox.png" alt="imagem de Susannah Fox"/>
+                    </div>
+
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             De diabetes a síndromes pouco conhecidas, a autora chama a atenção para a dedicação e persistência desses grupos 
                             que, em suas palavras, são capazes de criar a “revolução dos pacientes”. O trabalho incansável das pessoas em fóruns 

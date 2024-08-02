@@ -3,7 +3,7 @@
 export default function noticia() {
     return (
         <>
-                <div className="grow grid sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
+                <div className="grow grid text-[20px] font-Arial space-y-8 sm:grid-cols-8 gap-4  grid-cols-6 gap-4 mb-28" >
                     <div className="grow col-start-2 col-span-4 ">
                         <h1 className="grow sm:col-start-2 col-span-4 col-start-1 text-black sm:text-[40px] text-[28px] mt-[5rem] ">
                             Quanto falta para conseguirmos ler pensamentos, segundo a Ciência
@@ -11,7 +11,7 @@ export default function noticia() {
                     </div>
 
                     <div className="grow sm:col-start-2 col-span-4 col-start-2 ">
-                        <p className="sm:text-[24px] text-[18px] ">
+                        <p className=" text-[18px] ">
                             Os testes mais recentes com um novo dispositivo implantado no cérebro buscam medir sinais nervosos relacionados ao 
                             movimento de uma pessoa com mobilidade reduzida. Mas ainda estamos longe de conseguir ler pensamentos.
                         </p>
@@ -42,7 +42,7 @@ export default function noticia() {
 
                     </div>
                     
-                    <div className="col-start-2 col-span-4 space-y-4 text-[18px]">
+                    <div className="col-start-2 col-span-4 space-y-8 text-[18px]">
                         <p>
                             Em 29 de janeiro, Elon Musk postou em sua rede social X, antigo Twitter, sobre o sucesso da primeira intervenção 
                             cirúrgica para implante de um dispositivo desenvolvido por sua start-up Neuralink em um humano. O nome do 
@@ -60,7 +60,7 @@ export default function noticia() {
                             De início, podemos dizer que o implante foi um sucesso. Mas para conhecer os resultados será necessário acompanhar 
                             de perto um estudo que promete ser longo.
                         </p>
-                        <h2>O indiscutível avanço tecnológico do Telepathy</h2>
+                        <h2 className="text-[20px] font-black">O indiscutível avanço tecnológico do Telepathy</h2>
                         <p>O que a equipe de Elon Musk conseguiu é muito revolucionário do ponto de vista tecnológico.</p>
                         <p>
                             O Telepathy carrega uma bateria que é recarregada externamente e dispõe de 1.024 eletrodos, distribuídos em 64 fios, 
@@ -77,7 +77,7 @@ export default function noticia() {
                             se o dispositivo Neuralink reconhecesse a atividade neuronal que o pensamento gera. E isso provavelmente nunca 
                             será alcançado.
                         </p>
-                        <h2>Zona obscura</h2>
+                        <h2 className="text-[20px] font-black">Zona obscura</h2>
                         <p>Qual é o desafio que enfrentamos quando tentamos medir sinais do cérebro?</p>
                         <p>
                             O desafio é a escuridão em que o observador se encontra depois que um neurônio é ativado. Isso não acontece com 
@@ -95,7 +95,7 @@ export default function noticia() {
                             Isso não acontece quando observamos o disparo de um neurônio. Nesse caso, o observador não verifica nenhuma mudança 
                             significativa, porque o pensamento gerado não é visível: o disparo do neurônio se perde na escuridão.
                         </p>
-                        <h2>Os estimuladores cerebrais profundos</h2>
+                        <h2 className="text-[20px] font-black">Os estimuladores cerebrais profundos</h2>
                         <p>Já existem dispositivos que são implantados dentro ou muito próximo ao cérebro e que interagem com ele.</p>
                         <p>
                             Um exemplo são os implantes cocleares, dispositivos com estimuladores localizados na cóclea (estrutura do ouvido 
@@ -112,7 +112,7 @@ export default function noticia() {
                             estimulador cerebral profundo. Ele começou a ser usado para tratar o Parkinson e, mais tarde, teve seu uso 
                             expandido para outras patologias, como a obesidade mórbida ou a depressão.
                         </p>
-                        <h2>Inutilizar neurônios sem realmente saber como funcionam</h2>
+                        <h2 className="text-[20px] font-black">Inutilizar neurônios sem realmente saber como funcionam</h2>
                         <p>Com estes dispositivos, atua-se em núcleos profundos do cérebro. Mas ainda sabemos bem como o órgão funciona.</p>
                         <p>
                             O dispositivo usado para controlar os distúrbios motores na doença de Parkinson (e não não para curar a doença), por 
@@ -127,7 +127,7 @@ export default function noticia() {
                             No entanto, o trabalho para entender em profundidade as conexões entre os diferentes núcleos relacionados ao 
                             movimento, e descobrir por que um estimulador cerebral profundo funciona, continua.
                         </p>
-                        <h2>E o que há para medir o pensamento?</h2>
+                        <h2 className="text-[20px] font-black">E o que há para medir o pensamento?</h2>
                         <p>
                             Neste momento estamos longe de medir o pensamento, as intenções, as memórias ou os desejos. Com esse tipo de 
                             dispositivo, não podemos saber o que as pessoas estão pensando.
