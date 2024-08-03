@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
     return (
 
-        <footer className="bottom-0 left-0 bg-roxo-p08 grid grid-cols-1 md:grid-cols-3 text-black text-sm md:text-base lg:text-lg xl:text-xl justify-center items-center space-y-1 md:space-y-0">
+<footer className="bottom-0 left-0 bg-roxo-p08 grid grid-cols-1 md:grid-cols-3 text-black text-sm md:text-base lg:text-lg xl:text-xl justify-center items-center space-y-1 md:space-y-0 -mr-10">
   <div className="order-last md:order-first p-4 py-8 md:py-16 text-center">
     <p className="font-pixels text-branco">Logo</p>
   </div>

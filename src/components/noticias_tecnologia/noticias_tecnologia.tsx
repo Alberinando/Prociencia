@@ -63,9 +63,7 @@ const Home: React.FC = () => {
 
       {noticiaPrincipal ? (
         <div className='ml-[20px] mr-[20px]'>
-          <div className='block md:hidden mt-[40px] ml-[20px] mr-[20px]'>
-            <Newsletter/>
-          </div>
+         
           <div className='grid grid-cols-12 gap-4 mt-[150px] mb-[20px]'>
             <h1 className='text-roxo-p08 grid col-start-2 col-span-3 text-[20px] font-black text-4xl'>Tecnologia</h1>
           </div>
