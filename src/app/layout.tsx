@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
+import noticiasData from '../database/tecnologia.json';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+       <footer>
+       {/* <div>
+          
+          {noticiasData.noticiastecnologia.map(noticia => (
+            <div key={noticia.Id}>
+              <h2>{noticia.titulo}</h2>
+          
+              <img src={noticia.LinkImagen} alt="Imagem da Notícia" />
+            </div>
+          ))}
+        </div>*/}
+        <Footer />
+        </footer>
+      </body>
     </html>
   );
 }

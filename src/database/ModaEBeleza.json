@@ -1,0 +1,35 @@
+{
+    "noticiasModaEBeleza":[
+        {
+            "Id": "1",
+            "titulo": "Lavar muito o rosto e não hidratar pele: 7 erros de beleza comuns no verão",
+            "LinkImagen": "/assets/imagens_modaebeleza/mulher_na_praia.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Sabrina Sato e Hello Kitty lançam coleção de beleza; saiba tudo",
+            "LinkImagen": "/assets/imagens_modaebeleza/sabrina_sato.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "‘Sempre ouvi que era bonita de rosto, mas precisava emagrecer e fiz loucuras’: especialistas apontam quais valores estão em jogo pela ditadura da beleza",
+            "LinkImagen": "/assets/imagens_modaebeleza/mulher_busca_emagrecimento.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "“Cowboy Core”: Beyoncé e Ana Castela influenciam nova tendência",
+            "LinkImagen": "/assets/imagens_modaebeleza/Beyonce_e_Ana_Castela.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "5",
+            "titulo": "Laranja e rosa vão ser as cores de 2024, segundo a cromoterapia e a numerologia",
+            "LinkImagen": "/assets/imagens_modaebeleza/cores_do_verao.png",
+            "LinkNoticia":""
+        }
+    ]
+   
+}

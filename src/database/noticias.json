@@ -1,0 +1,226 @@
+
+{
+    "noticiastecnologia":[
+        {
+            "Id": "1",
+            "titulo": "Conheça 4 startups brasileiras que vão ao SXSW 2024",
+            "LinkImagen": "/assets/imagens_tecnologia/image.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Conheça o cão-robô da Xiaomi que dança e vira cambalhota",
+            "LinkImagen": "/assets/imagens_tecnologia/cyberdog-2-xiaomi.webp"
+        },
+        {
+            "Id": "3",
+            "titulo": "Mulheres na TI: você também pode ser uma delas!",
+            "LinkImagen": "/assets/imagens_tecnologia/imagem-capa.webp"
+        },
+        {
+            "Id": "4",
+            "titulo": "Por que menos mulheres estão usando inteligência artificial do que homens?",
+            "LinkImagen": "/assets/imagens_tecnologia/32634250-79c8-11ee-8139-61b1db4c8e2f.png"
+        }
+    ],
+    "noticiasSaude":[
+        {
+            "Id": "1",
+            "titulo": "Surto, epidemia, pandemia e endemia: entenda a diferença e quais se aplicam no cenário da dengue no Brasil",
+            "LinkImagen": "/assets/imagens_saude/larva_mosquito.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Comer carambola faz mal para os rins? Entenda",
+            "LinkImagen": "/assets/imagens_saude/carambola.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Quer acordar mais disposto? Veja hábitos matinais para colocar em prática",
+            "LinkImagen": "/assets/imagens_saude/acordar_mais_disposto.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Por reajuste maior, operadoras de saúde cortam 90% dos planos familiares",
+            "LinkImagen": "/assets/imagens_saude/planos_coletivos.png",
+            "LinkNoticia":""
+        }
+    ],
+    "noticiasPolitica":[
+        {
+            "Id": "1",
+            "titulo": "Dados de filiação partidária revelam baixa participação política de jovens e mulheres",
+            "LinkImagen": "/assets/imagens_politica/pessoas.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Vozes: a importância da representatividade feminina na política",
+            "LinkImagen": "/assets/imagens_politica/censo2022.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "TSE aprova regra que pode levar a cassação de candidato por uso irregular de Inteligência Artificial",
+            "LinkImagen": "/assets/imagens_politica.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Mês da Mulher: veja leis que asseguram direito das mulheres e como recorrer",
+            "LinkImagen": "/assets/imagens_politica/mulher_em_escada.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "5",
+            "titulo": "Governo anuncia ações permanentes em reserva Yanomami em Roraima",
+            "LinkImagen": "/assets/imagens_politica/mulher_com_criança.png",
+            "LinkNoticia":""
+        }
+    ],
+    "noticiasModaEBeleza":[
+        {
+            "Id": "1",
+            "titulo": "Lavar muito o rosto e não hidratar pele: 7 erros de beleza comuns no verão",
+            "LinkImagen": "/assets/imagens_modaebeleza/mulher_na_praia.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Sabrina Sato e Hello Kitty lançam coleção de beleza; saiba tudo",
+            "LinkImagen": "/assets/imagens_modaebeleza/sabrina_sato.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "‘Sempre ouvi que era bonita de rosto, mas precisava emagrecer e fiz loucuras’: especialistas apontam quais valores estão em jogo pela ditadura da beleza",
+            "LinkImagen": "/assets/imagens_modaebeleza/mulher_busca_emagrecimento.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "“Cowboy Core”: Beyoncé e Ana Castela influenciam nova tendência",
+            "LinkImagen": "/assets/imagens_modaebeleza/Beyonce_e_Ana_Castela.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "5",
+            "titulo": "Laranja e rosa vão ser as cores de 2024, segundo a cromoterapia e a numerologia",
+            "LinkImagen": "/assets/imagens_modaebeleza/cores_do_verao.png",
+            "LinkNoticia":""
+        }
+    ],
+    "noticiasEntretedimento":[
+        {
+            "Id": "1",
+            "titulo": "Theresa Fonseca revela apoio de Adriana Esteves e receio da reação do do público como em 1993",
+            "LinkImagen": "/assets/imagens_entretedimento/noivas.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Apenas 38% dos filmes possuem protagonistas mulheres, diz estudo",
+            "LinkImagen": "/assets/imagens_entretedimento/mulheres_de_rosa.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Jojo Todynho explica término do namoro e garante: 'Não me traiu'",
+            "LinkImagen": "/assets/imagens_entretedimento/Jojo_Todynho.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Após traição, Shakira lança novo álbum e desabafa: 'Minhas lágrimas se transformaram em diamantes'",
+            "LinkImagen": "/assets/imagens_entretedimento/Shakira.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "5",
+            "titulo": "Ivete Sangalo anuncia mega turnê que celebra seus 30 anos de carreira",
+            "LinkImagen": "/assets/imagens_entretedimento/Ivete_Sangalo.png",
+            "LinkNoticia":""
+        }
+    ],
+    "noticiasEconomia ":[
+        {
+            "Id": "1",
+            "titulo": "Mulheres são os motores do crescimento econômico, diz Melinda Gates",
+            "LinkImagen": "/assets/imagens_economia/Melinda.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Mercado volta a elevar previsão de crescimento da economia em 2024, aponta Focus",
+            "LinkImagen": "/assets/imagens_economia/cedulas.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Sony corta 900 empregos da PlayStation e fecha estúdio em Londres",
+            "LinkImagen": "/assets/imagens_economia/playstation.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Mercado de R$ 150 tri: por que empresas precisam olhar para a economia feminina",
+            "LinkImagen": "/assets/imagens_economia/Beyonce.png",
+            "LinkNoticia":""
+        }
+    ],
+    "noticiasComportamento ":[
+        {
+            "Id": "1",
+            "titulo": "Astrologia: quem nasce em ano bissexto tem qual tipo de personalidade?",
+            "LinkImagen": "/assets/imagens_comportamento/calendario.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Sabor de Casa: veja como fazer filé à parmegiana com 'molho especial' da Soraia Bueno",
+            "LinkImagen": "/assets/imagens_comportamento/File_a_parmegiana.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Vai viajar? Veja algumas dicas para levar o seu pet com segurança",
+            "LinkImagen": "/assets/imagens_comportamento/pats.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "As dificuldades do jogo amoroso para as mulheres mais velhas",
+            "LinkImagen": "/assets/imagens_comportamento/Jael_Klein.png",
+            "LinkNoticia":""
+        }
+    ],
+    "noticiasCiencia":[
+        {
+            "Id": "1",
+            "titulo": "Gravidez de arraia sem contato com macho surpreende em aquário dos EUA; entenda",
+            "LinkImagen": "/assets/imagens_ciencia/Arraia.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Quanto falta para conseguirmos ler pensamentos, segundo a Ciência",
+            "LinkImagen": "/assets/imagens_ciencia/cerebro.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Mulheres na ciência: conheça 8 cientistas que fizeram história",
+            "LinkImagen": "/assets/imagens_ciencia/Lise_Meitner.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "A revolução dos pacientes que pode melhorar a medicina",
+            "LinkImagen": "/assets/imagens_ciencia/Susannah_Fox.png",
+            "LinkNoticia":""
+        }
+    ]
+}

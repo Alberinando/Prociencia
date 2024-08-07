@@ -1,0 +1,35 @@
+{
+    "noticiasEntretedimento":[
+        {
+            "Id": "1",
+            "titulo": "Theresa Fonseca revela apoio de Adriana Esteves e receio da reação do do público como em 1993",
+            "LinkImagen": "/assets/imagens_entretedimento/noivas.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Apenas 38% dos filmes possuem protagonistas mulheres, diz estudo",
+            "LinkImagen": "/assets/imagens_entretedimento/mulheres_de_rosa.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Jojo Todynho explica término do namoro e garante: 'Não me traiu'",
+            "LinkImagen": "/assets/imagens_entretedimento/Jojo_Todynho.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Após traição, Shakira lança novo álbum e desabafa: 'Minhas lágrimas se transformaram em diamantes'",
+            "LinkImagen": "/assets/imagens_entretedimento/Shakira.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "5",
+            "titulo": "Ivete Sangalo anuncia mega turnê que celebra seus 30 anos de carreira",
+            "LinkImagen": "/assets/imagens_entretedimento/Ivete_Sangalo.png",
+            "LinkNoticia":""
+        }
+    ]
+   
+}
