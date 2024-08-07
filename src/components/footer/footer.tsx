@@ -1,10 +1,12 @@
 "use client"
+import Link from "next/link";
 import React from "react";
+
 
 const Footer = () => {
     return (
 
-<footer className="bottom-0 left-0 bg-roxo-p08 grid grid-cols-1 md:grid-cols-3 text-black text-sm md:text-base lg:text-lg xl:text-xl justify-center items-center space-y-1 md:space-y-0 -mr-10">
+<footer className="bottom-0 left-0 bg-roxo-p08 grid grid-cols-1 md:grid-cols-3 text-black text-sm md:text-base lg:text-lg xl:text-xl justify-center items-center space-y-1 md:space-y-0 -mr-10 md:mr-0">
   <div className="order-last md:order-first p-4 py-8 md:py-16 text-center">
     <p className="font-pixels text-branco">Logo</p>
   </div>
@@ -20,9 +22,11 @@ const Footer = () => {
       </li>
     </ul>
     <p>
-      <button className="bg-rosa-claro mt-4 md:mt-8 w-48 h-10 font-pixels">
+    <Link href="/formulario" className="block px-4 py-2 mt-4 text-preto">
+        <button className="bg-rosa-claro mt-4 md:mt-8 w-48 h-10 font-pixels">
             FALE CONOSCO
-          </button>
+        </button>
+    </Link>
     </p>
   </div>
   <div className="bg-gray-500 py-8 md:py-16 p-4 text-center text-branco">

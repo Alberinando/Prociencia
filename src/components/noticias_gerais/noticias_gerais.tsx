@@ -11,7 +11,7 @@ import saudeData from '../../database/saude.json';
 import tecnologiaData from '../../database/tecnologia.json';
 import todas from '../../database/categorias.json';
 
-import Newsletter from "@/components/Newsletter/Newsletter.tsx";
+
 
 
 const Home: React.FC = () => {

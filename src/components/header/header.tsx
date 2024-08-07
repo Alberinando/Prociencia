@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+
 const Header = () => {
     const [showOptions, setShowOptions] = useState(false);
     const [dropdownIndex, setDropdownIndex] = useState(null);
@@ -57,7 +59,7 @@ const Header = () => {
     };
 
     return (
-        <div className="bg-roxo-p08 relative z-10 -mr-10">
+        <div className="bg-roxo-p08 relative z-10 -mr-10 md:mr-0">
             <div className="p-4 grid grid-cols-12 gap-4">
                 <div className="grid col-start-1 sm:col-span-1 col-span-2 block md:hidden">
                     <button onClick={toggleOptions} aria-label="Toggle Menu">
@@ -73,17 +75,17 @@ const Header = () => {
                         <div className="bg-branco text-center absolute top-16 left-0 right-0 w-2/3">
                             <ul>
                                 <li>
-                                    <Link href="../../Ciencia/Conheça4startupsbrasileirasquevaoaoSXSW2024" className="block px-4 py-2 mt-4 text-preto">
+                                    <Link href="/Tecnologia/MulheresnaTIvocetambempodeserumadelas" className="block px-4 py-2 mt-4 text-preto">
                                         Notícias
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto">
+                                    <Link href="/components/noticias_saude/noticias_saude" className="block px-4 py-2 text-preto">
                                         Saúde
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto">
+                                    <Link href="/formulario" className="block px-4 py-2 text-preto">
                                         Comportamento
                                     </Link>
                                 </li>
@@ -107,8 +109,18 @@ const Header = () => {
                 </div>
 
                 <div className="relative grid col-start-3 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    <button onClick={() => toggleDropdown(1)} className="focus:outline-none">
-                        Notícias
+                    <button onClick={() => toggleDropdown(1)} className="focus:outline-none flex flex-row">
+                        <div>
+                            Notícias
+                        </div>
+                        <div className="mt-2">
+                            <Image
+                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                alt="Minha Imagem"
+                                width={24}
+                                height={24}
+                            />
+                        </div>
                     </button>
                     {dropdownIndex === 1 && (
                         <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg rounded">
@@ -122,20 +134,9 @@ const Header = () => {
                     )}
                 </div>
 
-                <div className="relative grid col-start-4 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    <button onClick={() => toggleDropdown(2)} className="focus:outline-none">
-                        Saúde
-                    </button>
-                    {dropdownIndex === 2 && (
-                        <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg rounded">
-                            <ul>
-                                <li className="px-4 py-2 hover:bg-gray-200">Item 1</li>
-                                <li className="px-4 py-2 hover:bg-gray-200">Item 2</li>
-                                <li className="px-4 py-2 hover:bg-gray-200">Item 3</li>
-                                <li className="px-4 py-2 hover:bg-gray-200">Item 4</li>
-                            </ul>
-                        </div>
-                    )}
+               
+                <div className="grid col-start-4 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
+                    Saúde
                 </div>
 
                 <div className="grid col-start-5 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
@@ -148,7 +149,7 @@ const Header = () => {
                     Entretenimento
                 </div>
 
-                <div className="grid md:col-start-11 md:col-span-2 sm:col-start-10 sm:col-span-2 col-start-7 col-span-6">
+                <div className="grid md:col-start-11 md:col-span-2 sm:col-start-9 sm:col-span-4 col-start-7 col-span-6">
                     <div className="relative flex items-center border border-roxo-p08 rounded-lg focus-within:ring-4 focus-within:ring-roxo-p08 bg-cinza-escuro p-0.2">
                         <Image
                             src="/assets/Imagens_aleatorias/lupa.png"

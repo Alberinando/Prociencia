@@ -12,7 +12,7 @@ import saudeData from '../../database/saude.json';
 import tecnologiaData from '../../database/tecnologia.json';
 import todas from '../../database/categorias.json';
 
-import Newsletter from "@/components/Newsletter/Newsletter.tsx";
+
 
 const Home: React.FC = () => {
   const [noticiaPrincipal, setNoticiaPrincipal] = useState<any>(null);
@@ -104,11 +104,11 @@ const Home: React.FC = () => {
           </div>
           <div className="bg-gray-200 p-4 mb-4">
             <h2 className="text-xl font-bold mb-2">POPULARES</h2>
-            {/* Add popular news here */}
+           
           </div>
           <div className="bg-gray-200 p-4">
             <h2 className="text-xl font-bold mb-2">RECOMENDADOS</h2>
-            {/* Add recommended news here */}
+          
           </div>
         </div>
       </div>

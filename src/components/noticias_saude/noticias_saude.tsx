@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 
-import Newsletter from "@/components/Newsletter/Newsletter.tsx";
+
 import Link from 'next/link';
-
-
-
-
 
 
 
@@ -208,7 +204,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className='grid grid-cols-12 gap-4 mt-[20px]'>
-            <a href=" " rel="noopener noreferrer" className="text-roxo-p08 grid col-start-2 col-span-8 font-black ">
+            <a href="/MaisNoticias" rel="noopener noreferrer" className="text-roxo-p08 grid col-start-2 col-span-8 font-black ">
                 <div className=' flex flex-row'>
                   <p className='text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl m-2'> veja mais em notícias</p>
                   <img src="/assets/Imagens_aleatorias/seta-direita.png" alt="imagem de Ivete Sangalo" className='ml-2'/>

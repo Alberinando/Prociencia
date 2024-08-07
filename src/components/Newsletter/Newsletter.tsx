@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import React from "react";
 
 
@@ -28,9 +29,12 @@ const Conteudo = () => {
                   />
               </div>
               <div className="flex justify-center">
-                  <button className="bg-custom-pink mt-4 w-28 h-8 font-pixels rounded border order border-custom-pink">
-                     <p className='text-branco'> Enviar</p>
-                  </button>
+                <Link href="/formulario" className="block px-4 py-2 mt-4 text-preto">
+                    <button className="bg-custom-pink mt-4 w-28 h-8 font-pixels rounded border order border-custom-pink">
+                      <p className='text-branco'> Enviar</p>
+                    </button>
+                </Link>
+                  
               </div>
             </div> 
         </>
