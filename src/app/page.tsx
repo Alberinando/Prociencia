@@ -1,12 +1,12 @@
 "use client"
 
-import Noticias from "@/components/noticias_gerais/noticias_gerais.tsx";
-import NoticiasPorCategoria from "@/components/noticias_tecnologia/noticias_tecnologia.tsx";
+import Noticias from "@/components/noticias_gerais/noticias_gerais";
+import Tecnologia from "@/components/noticias_tecnologia/noticias_tecnologia";
 import Imagem from "@/components/imagem/imagem";
-import NoticiaEconomia from "@/components/noticias_saude/noticias_saude.tsx";
-import NoticiaModaBeleza from "@/components/noticias_modabeleza/noticias_modabeleza.tsx";
-import VideoGrid from "@/components/VideoGrid/VideoGrid.tsx";
-import Newsletter from "@/components/Newsletter/Newsletter.tsx";
+import NoticiaSaude from "@/components/noticias_saude/noticias_saude";
+import NoticiaModaBeleza from "@/components/noticias_modabeleza/noticias_modabeleza";
+import VideoGrid from "@/components/VideoGrid/VideoGrid";
+import Newsletter from "@/components/Newsletter/Newsletter";
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
     <div>
     <Noticias />
     <Imagem/>
-    <NoticiasPorCategoria/>
-    <NoticiaEconomia/>
+    <Tecnologia/>
+    <NoticiaSaude/>
     <NoticiaModaBeleza/>
     <Imagem/>
     <VideoGrid/>
