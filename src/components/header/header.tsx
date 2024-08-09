@@ -1,4 +1,6 @@
 "use client";
+
+
 import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -80,7 +82,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/components/noticias_saude/noticias_saude" className="block px-4 py-2 text-preto">
+                                    <Link href="/ConjuntoDeNoticias/noticias_saude" className="block px-4 py-2 text-preto">
                                         Saúde
                                     </Link>
                                 </li>
@@ -109,11 +111,11 @@ const Header = () => {
                 </div>
 
                 <div className="relative grid col-start-3 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    <button onClick={() => toggleDropdown(1)} className="focus:outline-none flex flex-row">
+                    <button onClick={() => toggleDropdown(1)} className="focus:outline-none flex flex-row items-center">
                         <div>
                             Notícias
                         </div>
-                        <div className="mt-2">
+                        <div className="ml-2">
                             <Image
                                 src="/assets/Imagens_aleatorias/seta-para-baixo.png"
                                 alt="Minha Imagem"
@@ -125,28 +127,101 @@ const Header = () => {
                     {dropdownIndex === 1 && (
                         <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg rounded">
                             <ul>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Economia</li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Política</li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Ciência</li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">Tecnologia</li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/EconomiaPage">Economia</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/PoliticaPage">Política</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/CienciaPage">Ciência</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/TecnologiaPage">Tecnologia</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/ComportamentoPage">Comportamento</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/TecnologiaPage">Tecnologia</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/EntreterimentoPage">Entreterimento</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/ModaEBelezaPage">Moda e Beleza</a>
+                                </li>
+                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                    <a href="/ConjuntoDeNoticias/SaudePage">Saúde</a>
+                                </li>
                             </ul>
                         </div>
                     )}
                 </div>
 
                
-                <div className="grid col-start-4 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    Saúde
+                <div className="col-start-4 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-white">
+                    <div className="flex flex-row items-center">
+                        <Link href="/ConjuntoDeNoticias/SaudePage" className="text-white">
+                            Saúde
+                        </Link>
+                        <div className="ml-2">
+                            <Image
+                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                alt="Minha Imagem"
+                                width={20}
+                                height={20}
+                            />
+                        </div>
+                    </div>
                 </div>
 
-                <div className="grid col-start-5 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    Comportamento
+                <div className="grid col-start-5 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco ">
+                    <div className="flex flex-row items-center">
+                        <Link href="/ConjuntoDeNoticias/ComportamentoPage" className="text-white">
+                            Comportamento
+                        </Link>
+                        <div className="ml-2">
+                            <Image
+                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                alt="Minha Imagem"
+                                width={20}
+                                height={20}
+                            />
+                        </div>
+                    </div>
+                        
+                    
                 </div>
                 <div className="grid col-start-7 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    Moda e Beleza
+                    <div className="flex flex-row items-center">
+                        <Link href="/ConjuntoDeNoticias/ModaEBelezaPage" className="text-white">
+                            Moda e Beleza
+                        </Link>
+                        <div className="ml-2">
+                            <Image
+                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                alt="Minha Imagem"
+                                width={20}
+                                height={20}
+                            />
+                        </div>
+                    </div>
                 </div>
                 <div className="grid col-start-9 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    Entretenimento
+                    <div className="flex flex-row items-center">
+                        <Link href="/ConjuntoDeNoticias/EntreterimentoPage" className="text-white">
+                            Entretenimento
+                        </Link>
+                        <div className="ml-2">
+                            <Image
+                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                alt="Minha Imagem"
+                                width={20}
+                                height={20}
+                            />
+                        </div>
+                    </div>
                 </div>
 
                 <div className="grid md:col-start-11 md:col-span-2 sm:col-start-9 sm:col-span-4 col-start-7 col-span-6">
