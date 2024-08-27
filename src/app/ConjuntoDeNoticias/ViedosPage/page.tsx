@@ -1,15 +1,13 @@
-
 "use client"
 
-import Politica from "@/components/noticias_Politica/noticias_Politica";
-
+import VideosPage from "@/components/VideoGrid/VideoGrid";
 
 
 export default function Home() {
   return (
     <>
     <div className="mb-[100px]">
-       <Politica/>
+       <VideosPage/>
     </div>
      
     </>

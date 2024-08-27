@@ -1,9 +1,10 @@
 // src/App.js
 import React from 'react';
 
+
 function App() {
   return (
-    <div className="App flex items-center justify-center min-h-screen bg-custom-pink from-purple-400 via-pink-500 to-red-500">
+    <div className="App flex items-center justify-center min-h-screen bg-gradient-to-br  from-Roxo via-Rosa to-Rosa-choque ">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <img src="" alt="Logo" className="mb-4 mx-auto" />
         <h2 className="text-xl font-bold text-center mb-2">Registre sua denúncia</h2>

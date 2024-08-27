@@ -8,7 +8,7 @@ import Comportamento from "@/components/noticias_comportamento/noticias_comporta
 export default function Home() {
   return (
     <>
-    <div>
+    <div className="mb-[100px]">
        <Comportamento/>
     </div>
      

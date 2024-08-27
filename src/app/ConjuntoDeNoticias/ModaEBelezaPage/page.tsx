@@ -8,7 +8,7 @@ import NoticiaModaBeleza from "@/components/noticias_modabeleza/noticias_modabel
 export default function Home() {
   return (
     <>
-    <div>
+    <div className="mb-[100px]">
        <NoticiaModaBeleza/>
     </div>
      

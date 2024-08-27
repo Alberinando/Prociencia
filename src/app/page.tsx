@@ -13,12 +13,36 @@ export default function Home() {
     <>
     <div>
     <Noticias />
-    <Imagem/>
+    <div className="grid grid-cols-12 gap-4 mt-[50px]">
+      <div className=" w-full h-full object-cover grid col-start-2 col-span-10 sm:col-start-2 sm:col-span-10  md:col-start-2 md:col-span-10">
+        <Imagem/>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-12 gap-4 mt-[50px] block md:hidden">
+      <div className=" w-full h-full object-cover grid col-start-2 col-span-10 sm:col-start-2 sm:col-span-10  md:col-start-2 md:col-span-10">
+        <Newsletter/>
+      </div>
+    </div>
+    
     <Tecnologia/>
     <NoticiaSaude/>
+    <div className="grid grid-cols-12 gap-4 mt-[50px]">
+      <div className=" w-full h-full object-cover grid col-start-2 col-span-10 sm:col-start-2 sm:col-span-10  md:col-start-2 md:col-span-10">
+        <Imagem/>
+      </div>
+    </div>
     <NoticiaModaBeleza/>
-    <Imagem/>
-    <VideoGrid/>
+    <div className="grid grid-cols-12 gap-4 mt-[50px]">
+      <div className=" w-full h-full object-cover grid col-start-2 col-span-10 sm:col-start-2 sm:col-span-10  md:col-start-2 md:col-span-10">
+        <Imagem/>
+      </div>
+    </div>
+      <div className="grid grid-cols-12 gap-4 mt-[50px]">
+        <div className=" w-full h-full object-cover grid col-start-2 col-span-10 sm:col-start-2 sm:col-span-10  md:col-start-2 md:col-span-10">
+          <VideoGrid/>
+        </div>
+      </div>
     </div>
      
     </>

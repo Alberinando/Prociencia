@@ -1,6 +1,5 @@
 "use client";
 
-
 import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +8,7 @@ import Link from 'next/link';
 
 const Header = () => {
     const [showOptions, setShowOptions] = useState(false);
+    const [showOptions2, setShowOptions2] = useState(false);
     const [dropdownIndex, setDropdownIndex] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const [allNews, setAllNews] = useState([]);
@@ -16,6 +16,23 @@ const Header = () => {
 
     const toggleOptions = () => {
         setShowOptions(!showOptions);
+        if (showOptions2) {
+            setShowOptions2(false);
+        }
+    };
+
+    const handleNoticasClick = () => {
+        setShowOptions(false); // Oculta o menu principal
+        setShowOptions2(true); // Exibe o menu de notícias
+        
+    };
+
+
+
+    const handleLinkClick = () => {
+        setShowOptions(false);
+        setShowOptions2(false);
+        setDropdownIndex(null); 
     };
 
     const toggleDropdown = (index) => {
@@ -45,7 +62,7 @@ const Header = () => {
                     ...data.noticiasSaude,
                     ...data.noticiasPolitica,
                     ...data.noticiasModaEBeleza,
-                    ...data.noticiasEntretedimento,
+                    ...data.noticiasEntretenimento,
                     ...data['noticiasEconomia '],
                     ...data['noticiasComportamento '],
                     ...data.noticiasCiencia,
@@ -61,206 +78,327 @@ const Header = () => {
     };
 
     return (
-        <div className="bg-roxo-p08 relative z-10 -mr-10 md:mr-0">
-            <div className="p-4 grid grid-cols-12 gap-4">
-                <div className="grid col-start-1 sm:col-span-1 col-span-2 block md:hidden">
-                    <button onClick={toggleOptions} aria-label="Toggle Menu">
-                        <Image
-                            src="/assets/Imagens_aleatorias/icons8-cardápio-24.png"
-                            alt="Minha Imagem"
-                            width={30}
-                            height={30}
-                        />
-                    </button>
+        <div className="bg-roxo-p08 relative z-10   p-2   md:mr-0">
+            <div className="flex md:space-x-4 lg:space-x-8 flex-row ">
+                    <div className="block md:hidden">
+                        <button onClick={toggleOptions} aria-label="Toggle Menu">
+                            <Image
+                                src="/assets/Imagens_aleatorias/icons8-cardápio-24.png"
+                                alt="Menu"
+                                width={30}
+                                height={30}
+                            />
+                        </button>
 
-                    {showOptions && (
-                        <div className="bg-branco text-center absolute top-16 left-0 right-0 w-2/3">
-                            <ul>
-                                <li>
-                                    <Link href="/Tecnologia/MulheresnaTIvocetambempodeserumadelas" className="block px-4 py-2 mt-4 text-preto">
-                                        Notícias
-                                    </Link>
+                        {showOptions && (
+                            <div className="bg-branco text-center absolute top-16 left-0 right-0 w-2/3">
+                                <ul>
+                                <li className="flex flex-row items-center">
+                                    <button onClick={handleNoticasClick} aria-label="Show Noticias Options" className="flex-grow">
+                                        <Link href="" className="block px-4 py-2 mt-4 text-preto">
+                                            Notícias
+                                        </Link>
+                                    </button>
+                                    <div className="w-auto ml-2 mr-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
                                 </li>
-                                <li>
-                                    <Link href="/ConjuntoDeNoticias/noticias_saude" className="block px-4 py-2 text-preto">
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/ConjuntoDeNoticias/SaudePage" className="flex-grow block px-4 py-2 text-preto" onClick={handleLinkClick}>
                                         Saúde
                                     </Link>
+                                    <div className="w-auto ml-2 mr-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
                                 </li>
-                                <li>
-                                    <Link href="/formulario" className="block px-4 py-2 text-preto">
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/ConjuntoDeNoticias/ComportamentoPage" className="flex-grow block px-4 py-2 text-preto" onClick={handleLinkClick}>
                                         Comportamento
                                     </Link>
+                                    <div className="w-auto ml-2 mr-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
                                 </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto">
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/ConjuntoDeNoticias/ModaEBelezaPage" className="flex-grow block px-4 py-2 text-preto mb-8" onClick={handleLinkClick}>
                                         Moda e Beleza
                                     </Link>
+                                    <div className="w-auto ml-2 mr-8 mb-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
                                 </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto mb-8">
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/ConjuntoDeNoticias/EntretenimentoPage" className="flex-grow block px-4 py-2 text-preto mb-8" onClick={handleLinkClick}>
                                         Entretenimento
                                     </Link>
+                                    <div className="w-auto ml-2 mr-8 mb-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
+                                </li>
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/formulario" className="flex-grow block px-4 py-2 text-preto mb-8" onClick={handleLinkClick}>
+                                        Newsletter
+                                    </Link>
+                                    <div className="w-auto ml-2 mr-8 mb-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
+                                </li>
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/ConjuntoDeNoticias/ViedosPage" className="flex-grow block px-4 py-2 text-preto mb-8" onClick={handleLinkClick}>
+                                        Vídeos
+                                    </Link>
+                                    <div className="w-auto ml-2 mr-8 mb-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
+                                </li>
+                                <li className="flex flex-row items-center mt-4">
+                                    <Link href="/formulario" className="flex-grow block px-4 py-2 text-preto mb-8" onClick={handleLinkClick}>
+                                        Fale conosco
+                                    </Link>
+                                    <div className="w-auto ml-2 mr-8 mb-8">
+                                        <Image
+                                            src="/assets/Imagens_aleatorias/seta-direita-direita.png"
+                                            alt="Menu"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
                                 </li>
                             </ul>
-                        </div>
-                    )}
-                </div>
 
-                <div className="grid md:col-start-2 col-span-1 col-start-3 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-branco">
-                    Logo
-                </div>
 
-                <div className="relative grid col-start-3 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    <button onClick={() => toggleDropdown(1)} className="focus:outline-none flex flex-row items-center">
-                        <div>
-                            Notícias
-                        </div>
-                        <div className="ml-2">
-                            <Image
-                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
-                                alt="Minha Imagem"
-                                width={24}
-                                height={24}
-                            />
-                        </div>
-                    </button>
-                    {dropdownIndex === 1 && (
-                        <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg rounded">
+                            </div>
+                        )}
+                        {showOptions2 && (  
+                            <div className="bg-branco text-center absolute top-16 left-0 right-0 w-2/3">
                             <ul>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/EconomiaPage">Economia</a>
+                                <li>
+                                    <button onClick={toggleOptions} aria-label="Toggle Menu" className=" ">
+                                      <div className="flex flex-row items-center">
+                                        <div className=" mt-4">
+                                                <Image
+                                                        src="/assets/Imagens_aleatorias/seta-esquerda.png"
+                                                        alt="Menu"
+                                                        width={16}
+                                                        height={16}
+                                                    />
+                                        </div>
+                                        <div>
+                                                <Link href="" className="block px-4 py-2 mt-4 text-preto">Menu principal</Link>
+                                        </div>
+                                      </div>
+                                    </button>
                                 </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/PoliticaPage">Política</a>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 text-preto"onClick={handleLinkClick}>Notícias</Link>
                                 </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/CienciaPage">Ciência</a>
+                                <li>
+                                    <Link href="/ConjuntoDeNoticias/EconomiaPage" className="block px-4 py-2 text-preto"  onClick={handleLinkClick}>Economia</Link>
                                 </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/TecnologiaPage">Tecnologia</a>
+                                <li>
+                                    <Link href="/ConjuntoDeNoticias/PoliticaPage" className="block px-4 py-2 text-preto" onClick={handleLinkClick}>Política</Link>
                                 </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/ComportamentoPage">Comportamento</a>
+                                <li>
+                                    <Link href="/ConjuntoDeNoticias/CienciaPage" className="block px-4 py-2 text-preto" onClick={handleLinkClick}>Ciência</Link>
                                 </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/TecnologiaPage">Tecnologia</a>
-                                </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/EntreterimentoPage">Entreterimento</a>
-                                </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/ModaEBelezaPage">Moda e Beleza</a>
-                                </li>
-                                <li className="px-4 py-2 hover:bg-gray-200 text-preto">
-                                    <a href="/ConjuntoDeNoticias/SaudePage">Saúde</a>
+                                <li>
+                                    <Link href="/ConjuntoDeNoticias/TecnologiaPage" className="block px-4 py-2 text-preto" onClick={handleLinkClick}>Tecnologia</Link>
                                 </li>
                             </ul>
                         </div>
-                    )}
-                </div>
+                        )}
+                    </div>
 
-               
-                <div className="col-start-4 col-span-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-white">
-                    <div className="flex flex-row items-center">
-                        <Link href="/ConjuntoDeNoticias/SaudePage" className="text-white">
-                            Saúde
-                        </Link>
-                        <div className="ml-2">
-                            <Image
-                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
-                                alt="Minha Imagem"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
+                    <div className="w-1/7 p-2 ml-8 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-branco ">
+                        Logo
                     </div>
-                </div>
 
-                <div className="grid col-start-5 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco ">
-                    <div className="flex flex-row items-center">
-                        <Link href="/ConjuntoDeNoticias/ComportamentoPage" className="text-white">
-                            Comportamento
-                        </Link>
-                        <div className="ml-2">
-                            <Image
-                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
-                                alt="Minha Imagem"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
-                    </div>
-                        
-                    
-                </div>
-                <div className="grid col-start-7 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    <div className="flex flex-row items-center">
-                        <Link href="/ConjuntoDeNoticias/ModaEBelezaPage" className="text-white">
-                            Moda e Beleza
-                        </Link>
-                        <div className="ml-2">
-                            <Image
-                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
-                                alt="Minha Imagem"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className="grid col-start-9 col-span-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco">
-                    <div className="flex flex-row items-center">
-                        <Link href="/ConjuntoDeNoticias/EntreterimentoPage" className="text-white">
-                            Entretenimento
-                        </Link>
-                        <div className="ml-2">
-                            <Image
-                                src="/assets/Imagens_aleatorias/seta-para-baixo.png"
-                                alt="Minha Imagem"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="grid md:col-start-11 md:col-span-2 sm:col-start-9 sm:col-span-4 col-start-7 col-span-6">
-                    <div className="relative flex items-center border border-roxo-p08 rounded-lg focus-within:ring-4 focus-within:ring-roxo-p08 bg-cinza-escuro p-0.2">
-                        <Image
-                            src="/assets/Imagens_aleatorias/lupa.png"
-                            alt="Buscar"
-                            className="ml-2"
-                            width={20}
-                            height={20}
-                        />
-                        <input
-                            type="text"
-                            className="ml-2 w-full p-0.5 focus:outline-none bg-cinza-escuro placeholder-branco rounded-lg"
-                            placeholder="Buscar"
-                            value={searchQuery}
-                            onChange={handleSearch}
-                        />
-                    </div>
-                    {searchResults.length > 0 && (
-                        <div className="absolute top-full mt-1 bg-branco shadow-lg rounded-lg z-50 max-h-64 overflow-y-auto">
-                            <ul className="w-full">
-                                {searchResults.map((result, index) => (
-                                    <li key={index} className="flex items-center p-2 hover:bg-gray-200">
-                                        <Link href={`/${result.LinkNoticia}`} onClick={handleResultClick}>
-                                            <div className="flex items-center">
-                                                <img src={result.LinkImagen} alt={result.titulo} width={40} height={60} className="rounded-lg" />
-                                                <div className="ml-2">
-                                                    <p className="text-sm text-preto">{result.titulo}</p>
-                                                    <p className="text-xs text-gray-600">{result.autor}</p>
-                                                </div>
-                                            </div>
-                                        </Link>
+                    <div className="relative w-1/7 p-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco mt-1">
+                        <button onClick={() => toggleDropdown(1)} className="focus:outline-none flex flex-row items-center">
+                            <div className="w-5/6 md:text-xs lg:text-sm xl:text-xl 2xl:text-2xl whitespace-normal">
+                                Notícias
+                            </div>
+                        { /*<div className=" w-1/6">
+                                <div className="relative w-5 h-5">
+                                    <Image
+                                        src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                        alt="Dropdown"
+                                        layout="fill"
+                                        objectFit="contain"
+                                    />
+                                </div>
+                            </div>*/}
+                        </button>
+                        {dropdownIndex === 1 && (
+                            <div className="absolute top-full left-0 mt-2 w-48 bg-branco shadow-lg rounded z-20">
+                                <ul>
+                                    <li className="px-4 py-2 hover:bg-gray-200 text-preto border-b border-deeppink">
+                                        <Link href="/ConjuntoDeNoticias/EconomiaPage" onClick={handleLinkClick}>Economia</Link>
                                     </li>
-                                ))}
-                            </ul>
+                                    <li className="px-4 py-2 hover:bg-gray-200 text-preto border-b border-deeppink">
+                                        <Link href="/ConjuntoDeNoticias/PoliticaPage" onClick={handleLinkClick}>Política</Link>
+                                    </li>
+                                    <li className="px-4 py-2 hover:bg-gray-200 text-preto border-b border-deeppink">
+                                        <Link href="/ConjuntoDeNoticias/CienciaPage" onClick={handleLinkClick}>Ciência</Link>
+                                    </li>
+                                    <li className="px-4 py-2 hover:bg-gray-200 text-preto border-b border-deeppink">
+                                        <Link href="/ConjuntoDeNoticias/TecnologiaPage" onClick={handleLinkClick}>Tecnologia</Link>
+                                    </li>
+                                    <li className="px-4 py-2 hover:bg-gray-200 text-preto">
+                                        <Link href="/ConjuntoDeNoticias/ComportamentoPage" onClick={handleLinkClick}>Comportamento</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="w-1/7 p-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco mt-1">
+                        <div className="flex flex-row items-center">
+                            <Link href="/ConjuntoDeNoticias/SaudePage" className="w-5/6 text-white md:text-xs lg:text-sm xl:text-xl 2xl:text-2xl">Saúde</Link>
+                            {/*<div className=" w-1/6">
+                                <div className="relative w-5 h-5">
+                                    <Image
+                                        src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                        alt="Dropdown"
+                                        layout="fill"
+                                        objectFit="contain"
+                                    />
+                                </div>
+                            </div>*/}
                         </div>
-                    )}
-                </div>
+                    </div>
+
+                    <div className="w-1/7 p-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco mt-1">
+                        <div className="flex flex-row items-center">
+                            <Link href="/ConjuntoDeNoticias/ComportamentoPage" className="w-5/6 text-white md:text-xs lg:text-sm xl:text-xl 2xl:text-2xl ">Comportamento</Link>
+                        { /*<div className=" w-1/6">
+                                <div className="relative w-5 h-5">
+                                    <Image
+                                        src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                        alt="Dropdown"
+                                        layout="fill"
+                                        objectFit="contain"
+                                    />
+                                </div>
+                            </div>*/}
+                        </div>
+                    </div>
+
+                    <div className="w-1/7 p-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco mt-1">
+                        <div className="flex flex-row items-center">
+                            <Link href="/ConjuntoDeNoticias/ModaEBelezaPage" className="w-auto text-white md:text-xs lg:text-sm xl:text-xl 2xl:text-2xl whitespace-nowrap">
+                                Moda e Beleza
+                            </Link>
+                            {/*<div className=" w-1/6 flex-shrink-0">
+                                <div className="relative w-5 h-5">
+                                    <Image
+                                        src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                        alt="Dropdown"
+                                        layout="fill"
+                                        objectFit="contain"
+                                    />
+                                </div>
+                            </div>*/}
+                        </div>
+                    </div>
+
+                    <div className="w-1/7 p-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block text-branco mt-1">
+                        <div className="flex flex-row items-center">
+                            <Link href="/ConjuntoDeNoticias/EntretenimentoPage" className="w-5/6 text-white md:text-xs lg:text-sm xl:text-xl 2xl:text-2xl">Entretenimento</Link>
+                            {/*<div className=" w-1/6">
+                                <div className="relative w-5 h-5">
+                                    <Image
+                                        src="/assets/Imagens_aleatorias/seta-para-baixo.png"
+                                        alt="Dropdown"
+                                        layout="fill"
+                                        objectFit="contain"
+                                    />
+                                </div>
+                            </div>*/}
+                        </div>
+                    </div>
+
+                    <div className="w-full">
+
+                        <div className=" p-2 absolute right-0  w-[100px]  md:w-auto md:relative md:right-auto  md:w-3/4 mx-auto xl:md:w-2/4 ">
+                        
+                            <div className="  p-0.2 ">
+                                <div className="relative flex items-center border border-roxo-p08 rounded-lg focus-within:ring-4 focus-within:ring-roxo-p08 bg-cinza-escuro ">
+                                    <Image
+                                        src="/assets/Imagens_aleatorias/lupa.png"
+                                        alt="Buscar"
+                                        className="ml-2"
+                                        width={20}
+                                        height={20}
+                                    />
+                                    <input
+                                        type="text"
+                                        className="ml-2 w-full p-0.5 focus:outline-none bg-cinza-escuro placeholder-branco rounded-lg"
+                                        placeholder="Buscar"
+                                        value={searchQuery}
+                                        onChange={handleSearch}
+                                    />
+                                </div>
+
+                                {searchResults.length > 0 && (
+                                <div className="absolute top-full mt-1 bg-branco shadow-lg rounded-lg  max-h-64 overflow-y-auto">
+                                        <ul className="w-full">
+                                            {searchResults.map((result, index) => (
+                                                <li key={index} className="flex items-center p-2 hover:bg-gray-200">
+                                                    <Link href={`/${result.LinkNoticia}`} onClick={handleResultClick}>
+                                                        <div className="flex items-center">
+                                                            <img src={result.LinkImagen} alt={result.titulo} width={40} height={60} className="rounded-lg" />
+                                                            <div className="ml-2">
+                                                                <p className="text-sm text-preto">{result.titulo}</p>
+                                                                <p className="text-xs text-gray-600">{result.autor}</p>
+                                                            </div>
+                                                        </div>
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                </div>
+                                )}
+
+                            </div>
+                        </div>
+
+                    </div>
             </div>
         </div>
     );
@@ -273,110 +411,3 @@ export default Header;
 
 
 
-
-
-
-
-
-
-
-
-{/*"use client"
-import React, { useState } from "react";
-import Image from 'next/image';
-import Link from 'next/link';
-
-const Header = () => {
-    const [showOptions, setShowOptions] = useState(false);
-
-    const toggleOptions = () => {
-        setShowOptions(!showOptions);
-    };
-
-    return (
-        <div className="bg-rosa   relative z-10 ">
-            <div className="text-black p-6  flex flex-row text-sm md:text-base lg:text-lg xl:text-xl">
-               
-                <div className="mt-1 sm:hidden">
-                    <div className="flex flex-row ">
-                        <button onClick={toggleOptions} aria-label="Toggle Menu">
-                            <Image
-                                src="/assets/Header/menu-hamburguer.png"
-                                alt="Minha Imagem"
-                                width={20}
-                                height={20}
-                            />
-                        </button>
-                        <div className="mt-1 ml-4">Logo</div>
-                    </div>
-                    {showOptions && (
-                        <div className="bg-rosa text-center absolute top-16 left-0 right-0">
-                            <ul>
-                                <li>
-                                    <Link href="../../Ciencia/Conheça4startupsbrasileirasquevaoaoSXSW2024" className="block px-4 py-2 mt-4 text-preto">
-                                        Notícias
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto">
-                                        Saúde
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto">
-                                        Comportamento
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto">
-                                        Moda e Beleza
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 text-preto  mb-8">
-                                        Entretenimento
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    )}
-                </div>
-
-              
-                <div className="hidden sm:flex flex-row items-center justify-center z-10 space-x-10  ">
-                    <div className="ml-4 mr-4 ">Logo</div>
-                    <ul className="flex space-x-10 justify-items-center items-center">
-                        <li>
-                            <Link href="/" className="text-preto">
-                                Notícias
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/" className="text-preto">
-                                Saúde
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/" className="text-preto">
-                                Comportamento
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/" className="text-preto">
-                                Moda e Beleza
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/" className="text-preto">
-                                Entretenimento
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    );
-};
-
-export default Header;*/}

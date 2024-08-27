@@ -12,64 +12,71 @@ const Home: React.FC = () => {
       .then(response => response.json())
       .then(data => {
         const noticiasCategoria = [
-            ...data.noticiastecnologia,
-            ...data.noticiasSaude,
-            ...data.noticiasPolitica,
-            ...data.noticiasModaEBeleza,
-            ...data.noticiasEntretenimento,
-            ...data['noticiasEconomia '],
-            ...data['noticiasComportamento '],
-            ...data.noticiasCiencia,
+          ...data.noticiastecnologia,
+          ...data.noticiasSaude,
+          ...data.noticiasPolitica,
+          ...data.noticiasModaEBeleza,
+          ...data.noticiasEntretenimento,
+          ...data['noticiasEconomia '],
+          ...data['noticiasComportamento '],
+          ...data.noticiasCiencia,
         ];
 
-        // Seleciona a notícia principal
-        const randomIndexPrincipal = Math.floor(Math.random() * noticiasCategoria.length);
-        const noticiaPrincipalSelecionada = noticiasCategoria[randomIndexPrincipal];
-        setNoticiaPrincipal(noticiaPrincipalSelecionada);
+       // Seleciona a notícia principal
+       const randomIndexPrincipal = Math.floor(Math.random() * noticiasCategoria.length);
+       const noticiaPrincipalSelecionada = noticiasCategoria[randomIndexPrincipal];
+       setNoticiaPrincipal(noticiaPrincipalSelecionada);
 
-        // Remove a notícia principal da lista para evitar repetição
-        const noticiasRestantes = noticiasCategoria.filter(
-          (          noticia: { titulo: any; }) => noticia.titulo !== noticiaPrincipalSelecionada.titulo
-        );
+       // Remove a notícia principal da lista para evitar repetição
+       const noticiasRestantes = noticiasCategoria.filter(
+         (          noticia: { titulo: any; }) => noticia.titulo !== noticiaPrincipalSelecionada.titulo
+       );
 
-        // Seleciona outras 3 notícias da mesma categoria, garantindo que não sejam repetidas
-        const noticiaCategoria1Selecionada = noticiasRestantes[Math.floor(Math.random() * noticiasRestantes.length)];
-        const noticiasRestantes2 = noticiasRestantes.filter(
-          (          noticia: { titulo: any; }) => noticia.titulo !== noticiaCategoria1Selecionada.titulo
-        );
+       // Seleciona outras 3 notícias da mesma categoria, garantindo que não sejam repetidas
+       const noticiaCategoria1Selecionada = noticiasRestantes[Math.floor(Math.random() * noticiasRestantes.length)];
+       const noticiasRestantes2 = noticiasRestantes.filter(
+         (          noticia: { titulo: any; }) => noticia.titulo !== noticiaCategoria1Selecionada.titulo
+       );
 
-        const noticiaCategoria2Selecionada = noticiasRestantes2[Math.floor(Math.random() * noticiasRestantes2.length)];
-        const noticiasRestantes3 = noticiasRestantes2.filter(
-          (          noticia: { titulo: any; }) => noticia.titulo !== noticiaCategoria2Selecionada.titulo
-        );
+       const noticiaCategoria2Selecionada = noticiasRestantes2[Math.floor(Math.random() * noticiasRestantes2.length)];
+       const noticiasRestantes3 = noticiasRestantes2.filter(
+         (          noticia: { titulo: any; }) => noticia.titulo !== noticiaCategoria2Selecionada.titulo
+       );
 
-        const noticiaCategoria3Selecionada = noticiasRestantes3[Math.floor(Math.random() * noticiasRestantes3.length)];
+       const noticiaCategoria3Selecionada = noticiasRestantes3[Math.floor(Math.random() * noticiasRestantes3.length)];
 
-        // Define as notícias das categorias
-        setNoticiaCategoria1(noticiaCategoria1Selecionada);
-        setNoticiaCategoria2(noticiaCategoria2Selecionada);
-        setNoticiaCategoria3(noticiaCategoria3Selecionada);
-      })
-      .catch(error => console.error('Error fetching noticias:', error));
-  }, []);
+       // Define as notícias das categorias
+       setNoticiaCategoria1(noticiaCategoria1Selecionada);
+       setNoticiaCategoria2(noticiaCategoria2Selecionada);
+       setNoticiaCategoria3(noticiaCategoria3Selecionada);
+     })
+     .catch(error => console.error('Error fetching noticias:', error));
+ }, []);
 
   const formatLink = (linkNoticia: string) => {
     return `/${linkNoticia}`;
   };
 
+  const CategoriaBadge = () => (
+    <div className="absolute top-4 left-4 bg-white text-black px-2 py-1 text-xs font-semibold rounded">
+      <p>{noticiaCategoria2.Categoria}</p>
+    </div>
+  );
+
   return (
     <div className="App">
       {noticiaPrincipal ? (
         <div className='ml-[20px] mr-[20px]'>
-          <div className='grid grid-cols-12 gap-4 mt-[150px] mb-[20px]'>
-            <h1 className='text-roxo-p08 grid col-start-2 col-span-3 text-[20px] font-black text-4xl'>Economia</h1>
+          <div className='grid grid-cols-12 gap-4 mt-[100px] mb-[20px]'>
+            <h1 className='text-roxo-p08 grid col-start-2 col-span-3 text-[20px] font-black text-4xl'>Entretenimento</h1>
           </div>
           <div className='grid grid-cols-12 gap-4'>
 
-            <div className='grid col-start-2 col-span-10 md:col-start-2 md:col-span-3 mb-[10px]'>
+            <div className='grid col-start-2 col-span-10 md:col-start-2 md:col-span-3 mb-[20px]'>
               {noticiaPrincipal && (
                 <div className="relative w-full h-full">
                   <a href={formatLink(noticiaPrincipal.LinkNoticia)} rel="noopener noreferrer" className="block w-full h-full">
+                    <CategoriaBadge/>
                     <img src={noticiaPrincipal.LinkImagen} alt={noticiaPrincipal.titulo} className="w-full h-full object-cover"/>
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
                       <div className="text-white">
@@ -82,7 +89,7 @@ const Home: React.FC = () => {
               )}
             </div>
 
-            <div className='grid col-start-2 col-span-10 md:col-start-2 md:col-span-3 mb-[20px]'>
+            <div className='grid col-start-2 col-span-10 md:col-start-5 md:col-span-4 mb-[40px]'>
               {noticiaCategoria1 && (
                 <a href={formatLink(noticiaCategoria1.LinkNoticia)} rel="noopener noreferrer">
                   <div className='flex flex-row mb-[30px]'>
@@ -97,14 +104,14 @@ const Home: React.FC = () => {
                 </a>
               )}
 
-              {noticiaCategoria3 && (
+              {noticiaCategoria2 && (
                 <a href={formatLink(noticiaCategoria2.LinkNoticia)} rel="noopener noreferrer">
                   <div className='flex flex-row mb-[30px]'>
                     <div className='w-1/2'>
                       <img src={noticiaCategoria2.LinkImagen} alt={noticiaCategoria2.titulo} className='w-full h-full object-cover'/>
                     </div>
                     <div className='w-1/2'>
-                      <p>{noticiaCategoria2.Categoria}</p>
+                      <p>{noticiaCategoria1.Categoria}</p>
                       <h1 className='text-base mb-2  ml-2 font-black'>{noticiaCategoria2.titulo}</h1>
                     </div>
                   </div>
@@ -118,7 +125,7 @@ const Home: React.FC = () => {
                       <img src={noticiaCategoria3.LinkImagen} alt={noticiaCategoria3.titulo} className='w-full h-full object-cover'/>
                     </div>
                     <div className='w-1/2'>
-                      <p>{noticiaCategoria3.Categoria}</p>
+                      <p>{noticiaCategoria1.Categoria}</p>
                       <h1 className='text-base font-bold mb-2  ml-2 font-black'>{noticiaCategoria3.titulo}</h1>
                     </div>
                   </div>

@@ -1,12 +1,12 @@
 
 "use client"
 
-import  Economia from "@/components/noticias_comportamento/noticias_comportamento";
+import  Economia from "@/components/noticias_economia/noticias_economia";
 
 export default function Home() {
   return (
     <>
-    <div>
+    <div className="mb-[100px]">
        <Economia/>
     </div>
      

@@ -43,8 +43,8 @@ const Home: React.FC = () => {
           <div className='grid grid-cols-12 gap-4 mt-[150px] mb-[20px]'>
             <h1 className='text-roxo-p08 grid col-start-2 col-span-3 text-[20px] font-black text-4xl'>Política</h1>
           </div>
-          <div className='md:flex flex-row  md:grid grid-cols-12 gap-4'>
-            <div className='grid col-start-2 col-span-3 mb-[40px]'>
+          <div className='grid grid-cols-12 gap-4'>
+            <div className='grid col-start-2 col-span-10 md:col-start-2 md:col-span-3 mb-[20px]'>
               {noticiaCategoria1 && (
                 <div className="relative w-full h-full">
                   <a href={formatLink(noticiaCategoria1.LinkNoticia)} rel="noopener noreferrer" className="block w-full h-full">
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                 </div>
               )}
             </div>
-            <div className='grid col-start-5 col-span-4 mb-[40px]'>
+            <div className='grid col-start-2 col-span-10 md:col-start-5 md:col-span-4 mb-[40px]'>
               {noticiaCategoria2 && (
                 <a href={formatLink(noticiaCategoria2.LinkNoticia)} rel="noopener noreferrer">
                   <div className='flex flex-row mb-[30px]'>
@@ -105,9 +105,9 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className='grid grid-cols-12 gap-4 mt-[20px]'>
-            <a href="/MaisNoticias" rel="noopener noreferrer" className="text-roxo-p08 grid col-start-2 col-span-8 font-black">
+            <a href="/ConjuntoDeNoticias/MaisNoticias" rel="noopener noreferrer" className="text-roxo-p08 grid col-start-2 col-span-8 font-black">
               <div className='flex flex-row'>
-                <p className='text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl m-2'>Veja mais em notícias</p>
+                <p className='sm:text-base md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl m-2'>Veja mais em notícias</p>
                 <img src="/assets/Imagens_aleatorias/seta-direita.png" alt="imagem de seta para direita" className='ml-2'/>
               </div>
             </a>

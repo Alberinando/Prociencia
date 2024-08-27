@@ -12,7 +12,7 @@ const Home: React.FC = () => {
           ...data.noticiasSaude,
           ...data.noticiasPolitica,
           ...data.noticiasModaEBeleza,
-          ...data.noticiasEntretedimento,
+          ...data.noticiasEntretenimento,
           ...data['noticiasEconomia '],
           ...data['noticiasComportamento '],
           ...data.noticiasCiencia,
@@ -24,13 +24,13 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-black text-roxo-p08 mb-6">Vídeos</h1>
+    <div className="container mx-auto p-4 mb-[50px]">
+      <h1 className="text-4xl font-black text-roxo-p08 mb-[30px] mt-[40px]">Vídeos</h1>
       {noticias.length > 0 ? (
         <>
-          <div className="grid grid-cols-1 sm:hidden gap-4">
+          <div className="grid grid-cols-12 sm:hidden gap-4">
             {noticias.slice(0, 1).map((noticia, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative grid col-start-2 col-span-10">
                 <img src={noticia.LinkImagen} alt={noticia.titulo} className="w-full h-auto" />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                   <div className="text-white text-center p-4">
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             ))}
           </div>
           
-          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-[20px]">
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-[20px]">
            
             {noticias.slice(0, 6).map((noticia, index) => (
               <div key={index} className="relative">

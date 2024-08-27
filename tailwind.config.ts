@@ -12,6 +12,7 @@ const config: Config = {
         pixels: '700', 
       },
     },
+  
     colors: {
       'branco': '#FFFFFF',
       'cinza-escuro':'#B2B2B2',
@@ -19,6 +20,9 @@ const config: Config = {
       'custom-pink': '#F11E96',
       'rosa-claro':'#FFA0EA',
       'roxo-p08': '#8A2BE2',
+      'Roxo':'rgba(165, 86, 222, 0.8)',/*#A556DE  */
+      'Rosa':'rgba(207, 55, 182, 0.64)',/*#CF37B6  */
+      'Rosa-choque':'rgba(241, 30, 150, 0.51)',/*#F11E96 */
       'preto':'#000000',
         'rosa':'#FFEEFA',
         'aliceblue': '#F0F8FF',
@@ -102,6 +106,7 @@ const config: Config = {
         'linen': '#FAF0E6',
         'magenta': '#FF00FF',
         'maroon': '#800000',
+        'marron-escuro': '#540030',
         'mediumaquamarine': '#66CDAA',
         'mediumblue': '#0000CD',
         'mediumorchid': '#BA55D3',
@@ -210,9 +215,30 @@ const config: Config = {
       body: '"Open Sans"'
     },
     fontWeight: {
-      thin: '100',
+      thin: '100',     // Muito fino
+      extraLight: '200', // Extra leve
+      light: '300',    // Leve
+      normal: '400',   // Normal
+      medium: '500',   // Médio
+      semiBold: '600', // Semi-negrito
+      bold: '700',     // Negrito
+      extraBold: '800', // Extra negrito
       black: '900',
-      normal:'400'
+    },
+    fontSize: {
+      xs: '0.75rem',    // Extra pequeno
+      sm: '0.875rem',   // Pequeno
+      base: '1rem',     // Tamanho base (padrão)
+      lg: '1.125rem',   // Grande
+      xl: '1.25rem',    // Extra grande
+      '2xl': '1.5rem',  // 2x Extra grande
+      '3xl': '1.875rem', // 3x Extra grande
+      '4xl': '2.25rem', // 4x Extra grande
+      '5xl': '3rem',    // 5x Extra grande
+      '6xl': '3.75rem', // 6x Extra grande
+      '7xl': '4.5rem',  // 7x Extra grande
+      '8xl': '6rem',    // 8x Extra grande
+      '9xl': '8rem',    // 9x Extra grande
     }
   },
   plugins: [],
