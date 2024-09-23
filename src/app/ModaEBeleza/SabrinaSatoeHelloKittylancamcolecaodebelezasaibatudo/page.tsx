@@ -1,4 +1,5 @@
 "use client"
+import Newsletter from "@/components/Newsletter/Newsletter"
 
 export default function noticia() {
     return (
@@ -16,23 +17,7 @@ export default function noticia() {
                     </div>
 
                     <div className="grow overflow-hidden   sm:col-start-6 col-span-3 col-start-2 col-span-4 space-y-4   m-0 sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px]">
-                        <div className="bg-darkgray flex justify-center ">
-                            <h1 className="text-[15px] sm:text-[20px] md:text-[25px] lg:text-[27px] xl:text-[32px] text-center self-center  bg-darkgray">NEWSLETTER HORÓSCOPO</h1>
-                        </div>
-                        <p className=" text-[18px] ">Toda segunda, receba no seu e-mail as previsões semanais para o seu signo.</p>
-                        <p className="text-center ">Cadastre o seu melhor e-mail:</p>
-                       <div className="">
-                        <input
-                                type="text"
-                                className=" w-full p-2 border border-gray rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                placeholder="Digite aqui..."
-                            />
-                       </div>
-                        <div className="flex justify-center ">
-                            <button className="bg-gray mt-4 w-48 h-10 col-start-2 col-span-1 font-pixels">
-                                Enviar
-                            </button>
-                        </div>
+                        <Newsletter/>
 
                     </div>
                     
