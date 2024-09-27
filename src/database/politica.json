@@ -1,0 +1,35 @@
+{
+    "noticiasPolitica":[
+        {
+            "Id": "1",
+            "titulo": "Dados de filiação partidária revelam baixa participação política de jovens e mulheres",
+            "LinkImagen": "/assets/imagens_politica/pessoas",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Vozes: a importância da representatividade feminina na política",
+            "LinkImagen": "/assets/imagens_politica/censo2022",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "TSE aprova regra que pode levar a cassação de candidato por uso irregular de Inteligência Artificial",
+            "LinkImagen": "/assets/imagens_politica",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Mês da Mulher: veja leis que asseguram direito das mulheres e como recorrer",
+            "LinkImagen": "/assets/imagens_politica/mulher_em_escada",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "5",
+            "titulo": "Governo anuncia ações permanentes em reserva Yanomami em Roraima",
+            "LinkImagen": "/assets/imagens_politica/mulher_com_criança",
+            "LinkNoticia":""
+        }
+    ]
+   
+}

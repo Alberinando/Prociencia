@@ -1,0 +1,26 @@
+{
+    "noticiastecnologia":[
+        {
+            "Id": "1",
+            "titulo": "Conheça 4 startups brasileiras que vão ao SXSW 2024",
+            "LinkImagen": "/assets/imagens_tecnologia/image.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Conheça o cão-robô da Xiaomi que dança e vira cambalhota",
+            "LinkImagen": "/assets/imagens_tecnologia/cyberdog-2-xiaomi.webp"
+        },
+        {
+            "Id": "3",
+            "titulo": "Mulheres na TI: você também pode ser uma delas!",
+            "LinkImagen": "/assets/imagens_tecnologia/imagem-capa.webp"
+        },
+        {
+            "Id": "4",
+            "titulo": "Por que menos mulheres estão usando inteligência artificial do que homens?",
+            "LinkImagen": "/assets/imagens_tecnologia/32634250-79c8-11ee-8139-61b1db4c8e2f.png"
+        }
+    ]
+   
+}

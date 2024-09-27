@@ -1,0 +1,29 @@
+{
+    "noticiasCiencia":[
+        {
+            "Id": "1",
+            "titulo": "Gravidez de arraia sem contato com macho surpreende em aquário dos EUA; entenda",
+            "LinkImagen": "/assets/imagens_ciencia/Arraia.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Quanto falta para conseguirmos ler pensamentos, segundo a Ciência",
+            "LinkImagen": "/assets/imagens_ciencia/cerebro.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Mulheres na ciência: conheça 8 cientistas que fizeram história",
+            "LinkImagen": "/assets/imagens_ciencia/Lise_Meitner.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "A revolução dos pacientes que pode melhorar a medicina",
+            "LinkImagen": "/assets/imagens_ciencia/Susannah_Fox.png",
+            "LinkNoticia":"./Tecnologia/MulheresnaTIvocetambempodeserumadelas"
+        }
+    ]
+   
+}

@@ -1,0 +1,29 @@
+{
+    "noticiasSaude":[
+        {
+            "Id": "1",
+            "titulo": "Surto, epidemia, pandemia e endemia: entenda a diferença e quais se aplicam no cenário da dengue no Brasil",
+            "LinkImagen": "/assets/imagens_saude/larva_mosquito.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "2",
+            "titulo": "Comer carambola faz mal para os rins? Entenda",
+            "LinkImagen": "/assets/imagens_saude/carambola.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "3",
+            "titulo": "Quer acordar mais disposto? Veja hábitos matinais para colocar em prática",
+            "LinkImagen": "/assets/imagens_saude/acordar_mais_disposto.png",
+            "LinkNoticia":""
+        },
+        {
+            "Id": "4",
+            "titulo": "Por reajuste maior, operadoras de saúde cortam 90% dos planos familiares",
+            "LinkImagen": "/assets/imagens_saude/planos_coletivos.png",
+            "LinkNoticia":""
+        }
+    ]
+   
+}
